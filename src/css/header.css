@@ -1,9 +1,3 @@
-.header>.container {}
-
-.header {
-    background-color: brown;
-}
-
 @media screen and (min-width: 375px) {}
 
 ;
