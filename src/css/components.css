@@ -1,4 +1,4 @@
-img {
+.components img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -50,14 +50,23 @@ img {
   gap: 20px;
 }
 .components-item {
+  border-radius: 15px;
+}
+
+.item-link {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 335px;
-
-  height: 100%;
-
   border-radius: 15px;
+
+  height: 270px;
+
   padding: 28px;
+  overflow: hidden;
+
+  opacity: 1;
+  transition: opacity var(--transition-time) var(--transition-type);
 }
 
 .components-item-text {
@@ -86,12 +95,19 @@ img {
 }
 
 .roller {
+  position: absolute;
   background-color: var(--color-white);
+
   border-radius: 15px;
   width: 335px;
   height: 270px;
   margin-left: -28px;
   padding: 28px;
+  top: 100%;
+  opacity: 0.5;
+
+  transition: transform var(--transition-time) var(--transition-type),
+    opacity var(--transition-time) var(--transition-type);
 }
 
 .roller-title {
@@ -133,6 +149,17 @@ img {
 
 .roller-text {
   color: var(--color-black);
+}
+
+.item-link:hover .roller,
+.item-link:focus .roller {
+  transform: translate(0%, -100%);
+  opacity: 1;
+}
+
+.item-link:hover .components..section-title,
+.item-link:focus .section-title {
+  opacity: 0;
 }
 
 @media screen and (min-width: 375px) {
