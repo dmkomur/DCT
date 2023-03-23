@@ -11,21 +11,187 @@
   background-size: cover;
   border-radius: 15px;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-hero > .container {
+    background-image: url(../img/chocolate-covered-cocoa-mob-2x.jpg);
+  }
+}
+
 .hero-media {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .hero-subtitle {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.21;
   letter-spacing: -0.03em;
-  colo }
+  color: var(--color-white);
+  margin-bottom: 32px;
+}
+.hero-btn {
+  width: 120px;
+  height: 41px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border: none;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--color-orange);
+  background-color: #fcf1e0;
+}
+.anchor-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 159px;
+  height: 41px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: 1px solid var(--color-bgwhite);
+}
+.anchor-hero:hover,
+.anchor-hero:focus {
+  color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+.hero-scroll-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: var(--color-bgwhite);
+  margin-right: 12px;
+}
+.hero-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--color-bgwhite);
+}
+.scroll-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-orange);
+}
 
 @media screen and (min-width: 375px) {
+  /* .section-hero > .container {
+    padding: 395px 20px 21px 20px;
+
+    background-image: url(../img/chocolate-covered-cocoa-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+  } */
+  .container {
+    width: 335px;
+    padding: 0 20px;
+    margin: 0 auto;
+    outline: solid tomato;
+  }
 }
 @media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+    padding: 0 20px;
+    margin: 0 auto;
+    outline: solid tomato;
+  }
+  .section-hero > .container {
+    padding: 671px 40px 40px 40px;
+
+    background-image: url(../img/chocolate-covered-cocoa-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero > .container {
+      background-image: url(../img/chocolate-covered-cocoa-table-2x.jpg);
+    }
+  }
+
+  .hero-subtitle {
+    max-width: 484px;
+    font-size: 28px;
+  }
+  .hero-media {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+  }
+  .scroll-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .hero-btn {
+    margin-right: 14px;
+  }
+  .anchor-hero {
+    margin-right: auto;
+  }
+  .hero-scroll-text {
+    margin-right: 14px;
+    font-size: 14px;
+  }
+  .hero-scroll {
+    width: 38px;
+    height: 38px;
+  }
+  .scroll-icon {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-} ;
+  .container {
+    width: 1136px;
+    padding: 0 20px;
+    margin: 0 auto;
+    outline: solid tomato;
+  }
+  .section-hero > .container {
+    padding: 381px 40px 40px 40px;
+    background-image: url(../img/chocolate-covered-cocoa-desktop.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero > .container {
+      background-image: url(../img/chocolate-covered-cocoa-desktop-2x.jpg);
+    }
+  }
+}
