@@ -1,11 +1,74 @@
-:root {
-  --color-black: #111111;
-  --color-darkviolet: #1e1823;
-  --color-orange: #fd9222;
-  --color-bgwhite: #fafafa;
-  --color-white: #ffffff;
-  --transition-type: cubic-bezier(0.61, 0.48, 0.94, 0.16);
-  --transition-time: 250ms;
+@media screen and (min-width: 320px) {
+  .header > .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 14px;
+  }
+  .header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-navigation-list {
+    display: none;
+  }
+  .header-network-list {
+    display: none;
+  }
+  .logotype {
+    position: relative;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+  }
+  .logotype-simply {
+    font-style: italic;
+  }
+  .header-btn-box-tablet {
+    display: none;
+  }
+  .menu-modal-btn-tablet {
+    display: none;
+  }
+  .header-btn-box-mobile {
+    display: block;
+    align-items: center;
+  }
+  .menu-modal-btn-mobile {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .logotype-icon {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    margin-left: 4px;
+    top: -1px;
+  }
+
+  .header-icon-menu-mobile {
+    stroke: var(--color-black);
+  }
+  .header-icon-menu-tablet {
+    stroke: var(--color-black);
+  }
+  .header-network-icon {
+    stroke: var(--color-black);
+    fill: transparent;
+    transition: stroke var(--transition-time) linear;
+  }
+  .header-network-link:is(:hover, :focus) .header-network-icon {
+    stroke: var(--color-orange);
+    fill: transparent;
+  }
 }
 @media screen and (min-width: 375px) {
   .header > .container {
@@ -16,7 +79,44 @@
     padding-top: 20px;
     padding-bottom: 14px;
   }
+}
 
+@media screen and (min-width: 768px) {
+  .header > .container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .header-btn-box-tablet {
+    display: block;
+    align-items: center;
+  }
+  .menu-modal-btn-tablet {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .header-btn-box-mobile {
+    display: none;
+  }
+  .menu-modal-btn-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header > .container {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+  .logotype {
+    position: relative;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+  }
   .header-navigation {
     display: flex;
     align-items: center;
@@ -24,8 +124,36 @@
     gap: 188px;
   }
   .header-navigation-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
     display: flex;
+
     gap: 24px;
+  }
+  .header-navigation-link {
+    position: relative;
+    color: var(--color-black);
+    transition: color var(--transition-time) linear;
+  }
+  .header-navigation-link:is(:hover, :focus) {
+    color: var(--color-orange);
+  }
+  .header-navigation-link:is(:hover, :focus)::after {
+    opacity: 1;
+  }
+  .header-navigation-link::after {
+    content: '';
+    width: 50%;
+    height: 0.5px;
+    position: absolute;
+    display: block;
+    left: 0px;
+    bottom: -4px;
+    background-color: var(--color-orange);
+    opacity: 0;
+    transition: opacity var(--transition-time) var(--transition-type);
   }
   .header-network-list {
     display: flex;
@@ -43,56 +171,22 @@
   .header-network-icon {
     width: 24px;
     height: 24px;
-  }
-  .logotype {
-    position: relative;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.03em;
-  }
-  .logotype-simply {
+    transition: stroke var(--transition-time) linear;
   }
   .header-btn-box-tablet {
-    display: block;
+    display: none;
   }
   .menu-modal-btn-tablet {
-    display: flex;
-    background-color: transparent;
-    border: none;
-    outline: none;
+    display: none;
   }
   .header-btn-box-mobile {
-    display: block;
-    align-items: center;
+    display: none;
   }
   .menu-modal-btn-mobile {
-    display: flex;
-    background-color: transparent;
-    border: none;
-    outline: none;
+    display: none;
   }
   .logotype-icon {
-    position: absolute;
-    margin-left: 4px;
-    top: -1px;
+    width: 24px;
+    height: 24px;
   }
-
-  .header-icon-menu-mobile {
-    stroke: var(--color-black);
-  }
-  .header-icon-menu-tablet {
-    stroke: var(--color-black);
-  }
-  .header-network-icon {
-    stroke: var(--color-black);
-    fill: transparent;
-  }
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1200px) {
 } ;
