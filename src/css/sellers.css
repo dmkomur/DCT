@@ -1,3 +1,59 @@
+.sellers {
+}
+
+.sellers-title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.section-title-accent {
+    margin-right: 5px;
+}
+
+.sellers-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sellers-item:last-child {
+    display: none;
+}
+
+.sellers-text {
+    margin-top: 20px;
+    color: #111111;
+    width: 306px;
+}
+
+.buy-button {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 72px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #FFFFFF;
+    background: #FD9222;
+    border-radius: 100px;
+    border: none;
+    width: 120px;
+    height: 41px;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 375px) {}
 
 ;
