@@ -8,13 +8,10 @@
   --transition-time: 250ms;
 }
 @media screen and (min-width: 375px) {
-  .header-icon-menu-mobile {
+  .menu-btn-icon {
     stroke: var(--color-black);
   }
-  .header-icon-menu-tablet {
-    stroke: var(--color-black);
-  }
-  .header-network-icon {
+  .menu-network-icon {
     stroke: var(--color-black);
     fill: transparent;
   }
