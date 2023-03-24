@@ -7,8 +7,6 @@
     flex-wrap: wrap;
     gap: 60px;
     align-items: center;
-    /* justify-content: center; */
-    
 }
 
 .reviews-item {
@@ -101,15 +99,17 @@
     .reviews-button {
         width: 222px;
         height: 50px;
+        font-size: 18px;
+        margin-top: 94px;
+        margin-bottom: 100px;
     }
-   
 }
 
 ;
 
 @media screen and (min-width: 1200px) {
     .reviews-list {
-        gap: 24px;
+        gap: 28px;
     }
 
     .reviews-item {
@@ -119,6 +119,11 @@
     .reviews-text {
         padding-left: 24px;
         padding-right: 24px;
+    }
+
+    .reviews-button {
+        margin-top: 95px;
+        margin-bottom: 128px;
     }
 }
 
