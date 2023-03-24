@@ -1,11 +1,125 @@
+.reviews-title {
+    margin-bottom: 74px;
+}
+
+.reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+
+.reviews-item {
+    position: relative;
+    width: 335px;
+    height: 200px;
+    background: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+    border-radius: 15px;
+}
+
+.reviews-img {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reviews-subtitle {
+    margin-top: 54px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    color: #111111;
+}
+
+.reviews-text {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 42px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.reviews-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 72px;
+    width: 165px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    color: #111111;
+    border: 1px solid #FD9222;
+    border-radius: 100px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.reviews-button:hover,
+.reviews-button:focus {
+    background: #FD9222;
+    color: #FFFFFF;
+}
+
+
 @media screen and (min-width: 375px) {}
 
 ;
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .reviews-list {
+        gap: 60px 16px;
+    }
+
+    .reviews-item {
+        width: 344px;
+    }
+
+    .reviews-title {
+        margin-bottom: 91px;
+        font-size: 24px;
+    }
+
+    .reviews-text {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .reviews-button {
+        width: 222px;
+        height: 50px;
+    }
+   
+}
 
 ;
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .reviews-list {
+        gap: 24px;
+    }
+
+    .reviews-item {
+        width: 360px;
+    }
+
+    .reviews-text {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
 
 ;

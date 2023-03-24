@@ -1,8 +1,10 @@
 .sellers {
 }
+.sellers-wrap-text {
+    display: none;
+}
 
 .sellers-title {
-    text-align: center;
     margin-bottom: 32px;
 }
 
@@ -10,22 +12,27 @@
     margin-right: 5px;
 }
 
-.sellers-list {
+.sellers-text {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    width: 306px;
+    font-weight: 400;
+    color: #111111;
+}
+
+.sellers-img img:last-child {
+    display: none;
+} 
+
+.sellers-img {
     display: flex;
-    gap: 32px;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
 }
 
-.sellers-item:last-child {
-    display: none;
-}
-
-.sellers-text {
-    margin-top: 20px;
-    color: #111111;
-    width: 306px;
+.seller-wrap {
+    margin-bottom: 72px;
 }
 
 .buy-button {
@@ -33,7 +40,6 @@
     margin: 0 auto;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 72px;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
@@ -43,14 +49,14 @@
     border: none;
     width: 120px;
     height: 41px;
+    cursor: pointer;
 }
 
-
-
-
-
-
-
+.buy-button:hover,
+.buy-button:focus {
+    background: #FCF1E0;
+    color: #FD9222;
+}
 
 
 
@@ -58,10 +64,58 @@
 
 ;
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .sellers-text {
+        display: none;
+    }
 
+    .sellers-title {
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+    
+    .sellers-img {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 16px;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+
+    .seller-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 100px;
+    }
+
+    .sellers-wrap-text {
+        display: block;
+        font-weight: 400;
+        color: #111111;
+        width: 306px; 
+    }
+
+    .buy-button {
+        width: 144px;
+        height: 45px;  
+        margin: 0;  
+    }
+}
 ;
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .sellers-img img:last-child {
+        display: block;
+    } 
+
+    .seller-wrap {
+        margin-bottom: 128px;
+    }
+
+    .sellers-wrap-text  {
+        width: 407px;
+    }
+}
 
 ;
