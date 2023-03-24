@@ -1,11 +1,119 @@
-@media screen and (min-width: 375px) {}
+.conteiner-swiper {
+  width: auto;
+  height: 453px;
+}
 
-;
+.swiper-wrapper {
+  padding-left: 0;
+  margin-top: 0;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--color-white);
+  width: auto;
+  height: 364px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 32px 52px;
+}
+.swiper-slide img {
+  width: 230px;
+  height: 201px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+.swiper-slide .made-subtitle {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.swiper-slide .text {
+  /* margin-top: 2px; */
+  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+}
 
-@media screen and (min-width: 768px) {}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: auto;
+  margin-top: 20px;
+}
 
-;
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+}
 
-@media screen and (min-width: 1200px) {}
+.swiper-pagination-bullet-active {
+  transition: background 1250ms var(--transition-type);
+  transition: width 250ms var(--transition-type);
+}
+.swiper-pagination-bullet-active {
+  background: #fd9222;
+  width: 28px;
+  height: 13px;
+  border-radius: 25px;
+}
 
-;
+.button-swiper {
+  width: 94px;
+  height: 33px;
+
+  background: var(--color-bgwhite);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.products {
+  margin: 72px 0;
+}
+@media screen and (min-width: 375px) {
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--color-white);
+    width: 335px;
+    height: 364px;
+  }
+  .products {
+    margin: 100px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner-swiper {
+    width: 768px;
+    height: 487px;
+  }
+  .swiper {
+    width: auto;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--color-white);
+    /* width: 270px !important; */
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner-swiper {
+    width: 1200px;
+    height: 487px;
+  }
+}
