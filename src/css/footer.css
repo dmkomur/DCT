@@ -114,7 +114,7 @@
     font-size: 28px;
 line-height: 1.21;
 }
-  .footer-menu-contacts{
+  .footer-address{
     margin-right: 50px;
     margin-left: auto;
   }
@@ -169,7 +169,7 @@ display: none;
 .footer{
     height: 270px;
 }
-.footer-menu-contacts{
+.footer-address{
   margin-right: 63px;
 }
 }
