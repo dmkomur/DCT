@@ -110,6 +110,11 @@
     opacity: 0;
     transition: opacity var(--transition-time) linear;
   }
+  .modal-menu.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
 }
 @media screen and (min-width: 375px) {
   .modal-menu {
