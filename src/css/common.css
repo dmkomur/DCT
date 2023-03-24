@@ -9,11 +9,12 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  background-color: var(--color-bgwhite);
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    background-color: var(--color-bgwhite);
+
 }
 
 .visually-hidden {
@@ -30,6 +31,21 @@ body {
   overflow: hidden;
 }
 
+.section-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.20;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: var(--color-black)
+}
+
+.section-title-accent {
+    color: var(--color-orange);
+}
+
 .container {
   width: 100%;
   padding: 0 20px;
@@ -44,9 +60,16 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+
+    .section-title {
+        line-height: 1.17;
+    }
+
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -54,6 +77,7 @@ body {
     max-width: 1200px;
   }
 }
+
 
 .section-title {
   font-weight: 600;
@@ -69,6 +93,7 @@ body {
 .section-title-accent {
   color: var(--color-orange);
 }
+
 
 .btn {
   font-family: inherit;
