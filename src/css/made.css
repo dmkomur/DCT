@@ -40,6 +40,7 @@
 
 .made-description-item {
     padding-left: 16px;
+    line-height: 1.29;
 }
 
 .made-description-item::before {
