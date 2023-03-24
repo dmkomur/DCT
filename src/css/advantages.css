@@ -6,24 +6,16 @@
 .advantages > .container {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+
+  padding-right: 28px;
 
   line-height: 1.22;
-}
-
-.advantages-taste {
-  padding: 9px 28px 9px 0px;
-}
-
-.advantages-price {
-  padding-right: 28px;
-}
-
-.advantages-production {
-  padding-right: 27px;
-}
-
-.advantages-item:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .advantages-item h3 {
@@ -61,18 +53,11 @@
   }
 
   .advantages-list {
-    display: flex;
-    flex-wrap: wrap;
     gap: 32px;
   }
 
   .advantages-item {
     width: calc((100% - 32px) / 2);
-  }
-
-  .advantages-production {
-    padding-right: 0px;
-    padding-bottom: 35px;
   }
 }
 
@@ -83,28 +68,15 @@
   }
 
   .advantages-list {
-    column-gap: 70px;
     flex-wrap: nowrap;
+    gap: 70px;
+    padding-right: 0;
   }
 
   .advantages-item {
+    width: calc((100% - 140px) / 3);
     position: relative;
-  }
-
-  .advantages-taste {
     padding-right: 18px;
-  }
-
-  .advantages-price {
-    padding-right: 18px;
-  }
-
-  .advantages-production {
-    padding-right: 18px;
-  }
-
-  .advantages-item:not(:last-child) {
-    margin-bottom: 0px;
   }
 
   .advantages-item:not(:last-child)::after {
