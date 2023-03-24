@@ -6,7 +6,6 @@
 .advantages > .container {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 72px;
 
   line-height: 1.22;
 }
@@ -59,7 +58,6 @@
   .advantages > .container {
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 50px;
   }
 
   .advantages-list {
@@ -82,7 +80,6 @@
 @media screen and (min-width: 1200px) {
   .advantages > .container {
     padding: 50px;
-    margin-top: 72px;
   }
 
   .advantages-list {
