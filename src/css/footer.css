@@ -95,7 +95,7 @@
 /* //////////////////////// */
 /* //////////////////////// */
 @media screen and (min-width: 768px) {
-  .container {
+  .footer {
     max-width: 768px;
   }
   .footer{
@@ -154,7 +154,7 @@ display: none;
 /* --------------- */
 /* --------------- */
 @media screen and (min-width: 1200px) {
-    .container {
+    .footer {
       max-width: 1200px;
     } 
     .flex-footer{
