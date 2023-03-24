@@ -1,5 +1,6 @@
 .section-hero {
   background-color: var(--color-bgwhite);
+  padding-bottom: 50px;
 }
 
 .section-hero > .container {
