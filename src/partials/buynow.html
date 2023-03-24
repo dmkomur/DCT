@@ -1,4 +1,4 @@
-<div class="backdrop">
+<div class="backdrop-modal-page">
   <div class="modal-page">
     <button class="modal-close-btn" type="button">
       <svg class="modal-close-icon">
@@ -12,14 +12,39 @@
       <ul class="modal-list">
         <li class="modal-list-items">
           <img
-            src="../img/black-chock-mob.jpg"
+            srcset="
+              ../img/modal-picture/black-chock-mob.jpg    1x,
+              ../img/modal-picture/black-chock-mob-2x.jpg 2x
+            "
+            src="../img/modal-picture/black-chock-mob.jpg"
             alt="chocolate"
-            width="167"
-            height="148"
           />
           <p class="modal-item-info">100 g</p>
-          <!-- </div> -->
         </li>
+        <div class="tablet-choco-items">
+          <li class="modal-list-items">
+            <img
+              srcset="
+                ../img/modal-picture/white-chock-mob.jpg    1x,
+                ../img/modal-picture/white-chock-mob-2x.jpg 2x
+              "
+              src="../img/modal-picture/white-chock-mob.jpg"
+              alt="chocolate"
+            />
+            <p class="modal-item-info">200 g</p>
+          </li>
+          <li class="modal-list-items">
+            <img
+              srcset="
+                ../img/modal-picture/chocolate-bar-mob.jpg    1x,
+                ../img/modal-picture/chocolate-bar-mob-2x.jpg 2x
+              "
+              src="../img/modal-picture/chocolate-bar-mob.jpg"
+              alt="chocolate"
+            />
+            <p class="modal-item-info">300 g</p>
+          </li>
+        </div>
       </ul>
     </div>
     <form class="modal-form">

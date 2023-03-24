@@ -1,4 +1,4 @@
-.backdrop {
+.backdrop-modal-page {
   position: fixed;
   top: 0;
   background-color: rgba(46, 47, 66, 0.4);
@@ -17,6 +17,7 @@
   border: none;
 }
 .modal-close-icon {
+  display: inline-block;
   width: 24px;
   height: 24px;
   stroke: #111111;
@@ -42,7 +43,9 @@
   align-items: center;
 }
 .modal-title {
+  font-size: 24px;
   margin-bottom: 32px;
+  line-height: 1.16;
 }
 .modal-title-part {
   color: var(--color-orange);
@@ -73,6 +76,9 @@
   border-radius: 15px;
   margin-bottom: 59px;
 }
+.tablet-choco-items {
+  display: none;
+}
 .modal-item-info {
   display: flex;
   justify-content: center;
@@ -86,6 +92,7 @@
   background-color: var(--color-bgwhite);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
+  margin-top: 16px;
 }
 
 .modal-field {
@@ -122,6 +129,7 @@
   color: #000000;
   margin-bottom: 8px;
 }
+
 .name-input {
   margin-bottom: 14px;
 }
@@ -144,6 +152,16 @@
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: #000000;
+}
+.modal-input-text::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color: rgba(17, 17, 17, 0.05);
+  rotate: 90deg;
 }
 
 .modal-icon-mastercard {
@@ -220,18 +238,33 @@
     top: 24px;
     right: 24px;
   }
+  .tablet-choco-items {
+    display: flex;
+    gap: 16px;
+  }
+  .modal-list {
+    display: flex;
+    gap: 16px;
+  }
   .modal-list-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px 32px 28px 32px;
+    padding: 24px 20px 18px 20px;
     width: 160px;
-    height: 96px;
+    height: 196px;
     background-color: var(--color-white);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     margin-bottom: 40px;
+  }
+  .modal-item-info {
+    margin-top: 14px;
+  }
+  .modal-field-text {
+    font-size: 14px;
+    line-height: 1.29;
   }
   .personal-info {
     display: flex;
@@ -240,12 +273,16 @@
   .modal-input {
     display: flex;
     height: 66px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-left: 24px;
+  }
+  .modal-input::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .name-input {
+    margin-bottom: 0;
   }
   .phone-input {
-    padding-left: 177px;
+    padding-left: 149px;
   }
   .modal-icon-flag {
     width: 32px;
@@ -264,6 +301,7 @@
     letter-spacing: -0.02em;
     color: #000000;
   }
+
   .modal-icon-mastercard {
     width: 44px;
     height: 30px;
@@ -271,10 +309,22 @@
     top: 25%;
     left: 445px;
   }
+  .modal-text-area {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .modal-comment::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
   .modal-comment {
     height: 137px;
   }
-}
+  .modal-btn {
+    width: 133px;
+    height: 45px;
+  }
 
-@media screen and (min-width: 1200px) {
-} ;
+  @media screen and (min-width: 1200px) {
+  }
+}
