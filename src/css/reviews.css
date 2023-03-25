@@ -13,7 +13,7 @@
     position: relative;
     width: 335px;
     height: 200px;
-    background: #FFFFFF;
+    background: var(--color-white);
     border: 1px solid rgba(17, 17, 17, 0.1);
     box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
     border-radius: 15px;
@@ -33,7 +33,7 @@
     font-size: 18px;
     line-height: 1.33;
     text-align: center;
-    color: #111111;
+    color: var(--color-black);
 }
 
 .reviews-text {
@@ -59,17 +59,18 @@
     font-size: 14px;
     line-height: 1.21;
     text-align: center;
-    color: #111111;
-    border: 1px solid #FD9222;
+    color: var(--color-black);
+    border: 1px solid var(--color-orange);
     border-radius: 100px;
     background: transparent;
     cursor: pointer;
+    transition: background, color cubic-bezier(0.61, 0.48, 0.94, 0.16);
 }
 
 .reviews-button:hover,
 .reviews-button:focus {
-    background: #FD9222;
-    color: #FFFFFF;
+    background: var(--color-orange);
+    color: var(--color-white);
 }
 
 
