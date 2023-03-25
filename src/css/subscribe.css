@@ -1,11 +1,132 @@
-@media screen and (min-width: 375px) {}
+.subscribe-section {
+  padding-top: 62px;
+  padding-bottom: 63px;
+  height: 370px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)),
+    url(../img/subscribe/subscribe-chocolate-mobile-1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-;
+.subscribe-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
 
-@media screen and (min-width: 768px) {}
+.subscribe-title-box {
+  max-width: 291px;
+}
 
-;
+.subscribe-title {
+  color: var(--color-white);
+  text-align: center;
+  line-height: 1.2;
+}
 
-@media screen and (min-width: 1200px) {}
+.subscribe-paragraph-box {
+  max-width: 326px;
+}
 
-;
+.subscribe-paragraph {
+  color: var(--color-white);
+  text-align: center;
+  line-height: 1.29;
+}
+
+.subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 41px;
+  background-color: var(--color-orange);
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  color: var(--color-orange);
+  background-color: #fcf1e0;
+}
+
+@media screen and (min-width: 375px) {
+  .subscribe-paragraph-box {
+    max-width: 467px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-section {
+    padding: 72px 0;
+    max-width: 768px;
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+      url(../img/subscribe/subscribe-chocolate-tablet-1x.jpg);
+  }
+
+  .subscribe-flex {
+    height: 226px;
+  }
+
+  .subscribe-btn {
+    width: 172px;
+    height: 50px;
+  }
+
+  .subscribe-title {
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-section {
+    max-width: 1200px;
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+      url(../img/subscribe/subscribe-chocolate-desktop-1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .subscribe-section {
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+      url(../img/subscribe/subscribe-chocolate-mobile-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
+  .subscribe-section {
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+      url(../img/subscribe/subscribe-chocolate-tablet-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 768px) {
+  .subscribe-section {
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+      url(../img/subscribe/subscribe-chocolate-desktop-2x.jpg);
+  }
+}

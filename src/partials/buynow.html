@@ -1,0 +1,118 @@
+<div class="backdrop-modal-page is-hidden" data-modal>
+  <div class="modal-page">
+    <button class="modal-close-btn" type="button" data-modal-close>
+      <svg class="modal-close-icon">
+        <use href="../img/icons.svg#icon-close-btn-small"></use>
+      </svg>
+    </button>
+    <div class="modal-part-up">
+      <h2 class="section-title modal-title">
+        <span class="modal-title-part">BUY</span>NOW
+      </h2>
+      <ul class="modal-list">
+        <li class="modal-list-items">
+          <img
+            srcset="
+              ../img/modal-picture/black-chock-mob.jpg    1x,
+              ../img/modal-picture/black-chock-mob-2x.jpg 2x
+            "
+            src="../img/modal-picture/black-chock-mob.jpg"
+            alt="chocolate"
+          />
+          <p class="modal-item-info">100 g</p>
+        </li>
+        <div class="tablet-choco-items">
+          <li class="modal-list-items">
+            <img
+              srcset="
+                ../img/modal-picture/white-chock-mob.jpg    1x,
+                ../img/modal-picture/white-chock-mob-2x.jpg 2x
+              "
+              src="../img/modal-picture/white-chock-mob.jpg"
+              alt="chocolate"
+            />
+            <p class="modal-item-info">200 g</p>
+          </li>
+          <li class="modal-list-items">
+            <img
+              srcset="
+                ../img/modal-picture/chocolate-bar-mob.jpg    1x,
+                ../img/modal-picture/chocolate-bar-mob-2x.jpg 2x
+              "
+              src="../img/modal-picture/chocolate-bar-mob.jpg"
+              alt="chocolate"
+            />
+            <p class="modal-item-info">300 g</p>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <form class="modal-form">
+      <label class="modal-field">
+        <span class="modal-field-text">Personal information</span>
+        <div class="personal-info">
+          <input
+            class="modal-input name-input"
+            type="text"
+            name="user-name"
+            placeholder="Name"
+          />
+          <input
+            class="modal-input"
+            type="text"
+            name="user-surname"
+            placeholder="Surname"
+          />
+        </div>
+      </label>
+      <label class="modal-field">
+        <span class="modal-field-text">Email</span>
+        <input
+          class="modal-input"
+          type="text"
+          name="user-email"
+          placeholder="Email"
+        />
+      </label>
+      <label class="modal-field">
+        <span class="modal-field-text">Phone number</span>
+        <div class="input-wrap">
+          <input
+            class="modal-input phone-input"
+            type="text"
+            name="user-phone"
+            placeholder="Phone number"
+          />
+          <svg class="modal-icon-flag">
+            <use href="../img/icons.svg#icon-flag"></use>
+          </svg>
+          <span class="modal-input-text">+380</span>
+        </div>
+      </label>
+
+      <label class="modal-field">
+        <span class="modal-field-text">Card number</span>
+        <span class="input-wrap">
+          <input
+            class="modal-input"
+            type="text"
+            name="user-crd-number"
+            placeholder="Enter card"
+          />
+          <svg class="modal-icon-mastercard">
+            <use href="../img/icons.svg#icon-mastercard"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="modal-text-area" for="user-comment">Comment</label>
+      <textarea
+        class="modal-comment"
+        name="user-comment"
+        id="user-comment"
+        placeholder="Enter text"
+      ></textarea>
+
+      <button type="submit" class="btn modal-btn">Submit</button>
+    </form>
+  </div>
+</div>

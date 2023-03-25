@@ -1,11 +1,199 @@
-@media screen and (min-width: 375px) {}
+.section-hero {
+  background-color: var(--color-bgwhite);
+  padding-bottom: 50px;
+}
+.hero-card {
+  height: 621px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(../img/chocolate-covered-cocoa-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
 
-;
+/* .section-hero > .container {
+  padding: 395px 20px 21px 20px;
 
-@media screen and (min-width: 768px) {}
+  background-image: url(../img/chocolate-covered-cocoa-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+} */
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-card {
+    background-image: url(../img/chocolate-covered-cocoa-mob-2x.jpg);
+  }
+}
 
-;
+.hero-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.hero-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: var(--color-white);
+  margin-bottom: 32px;
+}
+.hero-btn {
+  width: 120px;
+  height: 41px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border: none;
+  transition: color, background-color 250ms cubic-bezier(0.61, 0.48, 0.94, 0.16);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--color-orange);
+  background-color: #fcf1e0;
+}
+.anchor-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 159px;
+  height: 41px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: 1px solid var(--color-bgwhite);
+  transition: color, border-color 250ms cubic-bezier(0.61, 0.48, 0.94, 0.16);
+}
+.anchor-hero:hover,
+.anchor-hero:focus {
+  color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+.hero-scroll-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: var(--color-bgwhite);
+  margin-right: 12px;
+}
+.hero-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--color-bgwhite);
+}
+.scroll-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-orange);
+}
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 375px) {
+  .hero-card {
+    max-width: 335px;
+  }
+  .section-hero > .container {
+    /* width: 335px; */
+    /* padding: 0 20px; */
+    /* margin: 0 auto;
+    outline: solid tomato; */
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-card {
+    margin: 0 auto;
+    max-width: 704px;
+    height: 890px;
+    padding: 40px;
 
-;
+    background-image: url(../img/chocolate-covered-cocoa-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-card {
+      background-image: url(../img/chocolate-covered-cocoa-table-2x.jpg);
+    }
+  }
+
+  .hero-subtitle {
+    max-width: 484px;
+    font-size: 28px;
+  }
+  .hero-media {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+  }
+  .scroll-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .hero-btn {
+    margin-right: 14px;
+  }
+  .anchor-hero {
+    margin-right: auto;
+  }
+  .hero-scroll-text {
+    margin-right: 14px;
+    font-size: 14px;
+  }
+  .hero-scroll {
+    width: 38px;
+    height: 38px;
+  }
+  .scroll-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-card {
+    max-width: 1036px;
+    height: 600px;
+    background-image: url(../img/chocolate-covered-cocoa-desktop.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-card {
+      background-image: url(../img/chocolate-covered-cocoa-desktop-2x.jpg);
+    }
+  }
+}
