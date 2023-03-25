@@ -27,8 +27,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/DCT/assets/index-7ab8a7c1.js"></script>
-    <link rel="stylesheet" href="/DCT/assets/index-80c3ca35.css">
+    <script type="module" crossorigin src="/DCT/assets/index-cb5be89b.js"></script>
+    <link rel="stylesheet" href="/DCT/assets/index-21a8d86b.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -369,7 +369,9 @@
           each piece is a work of art that is sure to please.
         </p>
       </div>
-      <button type="button" class="subscribe-btn btn">Subscribe</button>
+      <button type="button" class="subscribe-btn btn" data-explore-open>
+        Subscribe
+      </button>
     </div>
   </div>
 </section>
@@ -675,20 +677,26 @@
     
     
     
-    <div class="explore-card">
-  <button type="button" class="explore-close">
-    <svg class="explore-close-icon" width="24" height="24">
-      <use href="../img/icons.svg#icon-close-btn-small"></use>
-    </svg>
-  </button>
-  <h2 class="section-title subscribe-header">
-    Explore our <br /><span class="section-title-accent">new chocolate</span>
-    first!
-  </h2>
-  <form class="subscribe-form">
-    <input type="email" class="explore-input" placeholder="Enter your email" />
-    <button class="subscribe-modal-btn">Submit</button>
-  </form>
+    <div class="backdrop is-hidden" data-explore>
+  <div class="explore-card">
+    <button type="button" class="explore-close" data-explore-close>
+      <svg class="explore-close-icon" width="24" height="24">
+        <use href="../img/icons.svg#icon-close-btn-small"></use>
+      </svg>
+    </button>
+    <h2 class="section-title subscribe-header">
+      Explore our <br /><span class="section-title-accent">new chocolate</span>
+      first!
+    </h2>
+    <form class="subscribe-form">
+      <input
+        type="email"
+        class="explore-input"
+        placeholder="Enter your email"
+      />
+      <button class="subscribe-modal-btn">Submit</button>
+    </form>
+  </div>
 </div>
 
 
