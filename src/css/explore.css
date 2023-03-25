@@ -6,7 +6,7 @@
     justify-content: end;
     height: 350px;
     width: 100%;
-    max-width: 350px;
+    max-width: 311px;
     padding: 32px 24px;
     border-radius: 15px;
     background-color: var(--color-bgwhite);
@@ -26,6 +26,12 @@
     right: 32px;
     background-color: transparent;
     border: 0;
+}
+
+.explore-close:hover>.explore-close-icon,
+.explore-close:focus>.explore-close-icon {
+    stroke: #FD9222;
+
 }
 
 .explore-close-icon {
@@ -85,12 +91,22 @@
 
 @media screen and (min-width: 375px) {}
 
-;
 
-@media screen and (min-width: 768px) {}
 
-;
+@media screen and (min-width: 768px) {
+    .explore-card {
+        background-image: url('../img/explore/explore-tablet1x.jpg');
+        max-width: 538px;
+        height: 412px;
+        padding: 40px;
+    }
 
-@media screen and (min-width: 1200px) {}
+    .explore-input {
+        height: 52px;
+        width: 313px;
+    }
 
-;
+    .subscribe-modal-btn {
+        padding: 17px 40px;
+    }
+}
