@@ -157,7 +157,7 @@
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
 }
-.roller-text::after {
+/* .roller-text::after {
   content: ' ';
   position: absolute;
   height: 100%;
@@ -165,17 +165,9 @@
   top: 90%;
   left: 20px;
   background: var(--color-white);
-}
+} */
 
-.roller-text::after::before {
-  content: ' asdasdas';
-  position: absolute;
-  height: 100%;
-  width: 82%;
-  top: 0;
-  left: 0;
-  background-color: red;
-}
+
 
 .components-item:hover .roller,
 .components-item:focus .roller {
