@@ -1,11 +1,112 @@
+.explore-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: end;
+    height: 350px;
+    width: 100%;
+    max-width: 311px;
+    padding: 32px 24px;
+    border-radius: 15px;
+    background-color: var(--color-bgwhite);
+    background-image: url('../img/explore/explore-mob1x.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    opacity: 1;
+    scale: 1;
+    transition: opacity 250ms linear;
+    transition: trasform 250ms linear;
+}
+
+.explore-close {
+    position: absolute;
+    top: 33px;
+    right: 32px;
+    background-color: transparent;
+    border: 0;
+}
+
+.explore-close:hover>.explore-close-icon,
+.explore-close:focus>.explore-close-icon {
+    stroke: #FD9222;
+
+}
+
+.explore-close-icon {
+    stroke: white;
+}
+
+.subscribe-header {
+    text-align: left;
+}
+
+.subscribe-form {
+    position: relative;
+    display: block;
+}
+
+.explore-input {
+    height: 45px;
+    width: 100%;
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.05);
+    background: transparent;
+    padding-left: 18px;
+}
+
+.explore-input::placeholder {
+
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+
+}
+
+.subscribe-modal-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 100px;
+    padding: 14px 24px;
+    background-color: #FD9222;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: white;
+    border: 0;
+    transition: color 250ms linear;
+    transition: background 250ms liner;
+}
+
+.subscribe-modal-btn:hover,
+.subscribe-modal-btn:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
+
 @media screen and (min-width: 375px) {}
 
-;
 
-@media screen and (min-width: 768px) {}
 
-;
+@media screen and (min-width: 768px) {
+    .explore-card {
+        background-image: url('../img/explore/explore-tablet1x.jpg');
+        max-width: 538px;
+        height: 412px;
+        padding: 40px;
+    }
 
-@media screen and (min-width: 1200px) {}
+    .explore-input {
+        height: 52px;
+        width: 313px;
+    }
 
-;
+    .subscribe-modal-btn {
+        padding: 17px 40px;
+    }
+}
