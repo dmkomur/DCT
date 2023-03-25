@@ -40,6 +40,7 @@
 
 .made-description-item {
     padding-left: 16px;
+    line-height: 1.29;
 }
 
 .made-description-item::before {
@@ -101,6 +102,7 @@
     .made-video {
         width: 600px;
         height: 400px;
+        margin-bottom: 0px;
     }
 
     .made-description {
