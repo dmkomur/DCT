@@ -10,10 +10,10 @@
 
 body {
 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    letter-spacing: -0.02em;
-    background-color: var(--color-bgwhite);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  background-color: var(--color-bgwhite);
 
 }
 
@@ -32,18 +32,18 @@ body {
 }
 
 .section-title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.20;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.20;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
 
-    color: var(--color-black)
+  color: var(--color-black)
 }
 
 .section-title-accent {
-    color: var(--color-orange);
+  color: var(--color-orange);
 }
 
 .container {
@@ -61,14 +61,14 @@ body {
 
 @media screen and (min-width: 768px) {
 
-    .section-title {
-        line-height: 1.17;
-    }
+  .section-title {
+    line-height: 1.17;
+  }
 
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
 
 }
 
@@ -102,9 +102,6 @@ body {
   line-height: 1.21;
   border-radius: 100px;
   padding: 14px 40px;
-  color: var(--color-white);
-  border: 2px solid green;
-  background-color: aqua;
   max-width: 100%;
 }
 
