@@ -2,13 +2,13 @@
   const refs = {
     openModalLeaveBtn: document.querySelector("[data-modal-leave-open]"),
     closeModalLeaveBtn: document.querySelector("[data-modal-leave-close]"),
-    modalLeave: document.querySelector("[data-modal]"),
+    leave: document.querySelector("[data-modal-leave]"),
   };
 
   refs.openModalLeaveBtn.addEventListener("click", toggleModalLeave);
   refs.closeModalLeaveBtn.addEventListener("click", toggleModalLeave);
 
   function toggleModalLeave() {
-    refs.modalLeave.classList.toggle("is-hidden");
+    refs.leave.classList.toggle("is-hidden");
   }
 })();
