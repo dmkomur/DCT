@@ -10,6 +10,7 @@
 .backdrop-modal-page.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 .modal-close-btn {
   position: absolute;
@@ -28,6 +29,7 @@
   width: 24px;
   height: 24px;
   stroke: #111111;
+  transition: stroke 250ms linear;
 }
 
 .modal-page {
@@ -103,6 +105,7 @@
   padding-bottom: 14px;
   padding-left: 18px;
   outline: transparent;
+  transition: border-color 250ms linear;
 }
 .modal-input:hover,
 .modal-input:focus {
@@ -189,6 +192,7 @@
   padding: 14px 18px;
   margin-bottom: 18px;
   outline: transparent;
+  transition: border-color 250ms linear;
 }
 .modal-comment::placeholder {
   font-weight: 400;
@@ -213,7 +217,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.17;
-  transition: background-color, color 250ms linear;
+  transition: color 250ms linear, background-color 250ms linear;
 }
 .modal-btn:hover,
 .modal-btn:focus {
