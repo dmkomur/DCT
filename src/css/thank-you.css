@@ -1,24 +1,24 @@
 /* General styles */
 
-/* Backdrop */
-
-.backdrop-thanks-buy {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--transition-time) var(--transition-type),
-    visibility var(--transition-time) var(--transition-type);
+#svg-gradient {
+  --color-stop-1: ;
+  --color-stop-2: ;
+  --color-stop-3: ;
 }
 
-/* Modal */
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* Modal Thanks Buy */
 
 .modal-thanks-buy {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  transform: translate(-50%, -50%);
   width: 311px;
   height: 350px;
   padding-top: 14px;
@@ -26,14 +26,19 @@
   border-radius: 15px;
 
   background-color: var(--color-orange);
-
-  /* transition: transform var(--transition-duration)
-    var(--transition-timing-function); */
+  background-image: url(../img/modal-thank-you/chocolate-bar.png);
+  background-repeat: no-repeat;
+  background-position: right 50px top 120px;
 }
 
-/* .backdrop-thank-you.is-hidden .modal-thank-you {
-  transform: translate(-50%, -50%) scale(0) rotate(0);
-} */
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .modal-thanks-buy {
+    background-image: url(../img/modal-thank-you/chocolate-bar-2x.png);
+  }
+}
 
 .modal-close-thanks-buy {
   margin-left: auto;
@@ -48,51 +53,218 @@
   border-radius: 50%;
 
   background: #fcf1e0;
-  stroke: rgba(212, 69, 40, 1);
-
-  transition: background-color var(--transition-duration)
-      var(--transition-timing-function),
-    fill var(--transition-duration) var(--transition-timing-function);
-
-  cursor: pointer;
-}
-
-.modal-close-thanks-buy:is(:hover, :focus) {
-  background: var(--pressed-state-color);
-  fill: var(--main-basic-color);
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
 
 .modal-thanks-buy-content {
   padding-left: 68px;
-  padding-right: 24px;
+  padding-right: 10px;
 
   color: var(--color-white);
 
   line-height: 1.14;
 }
 
-.title-thanks-buy {
-  text-transform: uppercase;
+.modal-thanks-buy h2 {
   margin-bottom: 8px;
+  text-align: left;
 
-  color: rgba(252, 241, 224, 1);
+  color: #fcf1e0;
 
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.modal-thanks-buy span {
+  color: #fcf1e0;
+}
+
+.modal-close-thanks-buy-icon {
+  stroke: url(#modal-close-icon-gradient-first),
+    url(#modal-close-icon-gradient-second);
 }
 
 @media screen and (min-width: 375px) {
 }
 
 @media screen and (min-width: 768px) {
+  .modal-thanks-buy {
+    width: 516px;
+    height: 414px;
+    padding-top: 24px;
+    padding-right: 24px;
+
+    background-image: url(../img/modal-thank-you/chocolate-bar-adaptive.png);
+    background-position: right 235px top 100px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modal-thanks-buy {
+      background-image: url(../img/modal-thank-you/chocolate-bar-adaptive-2x.png);
+    }
+  }
+
+  .modal-close-thanks-buy {
+    margin-bottom: 90px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .modal-close-thanks-buy-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .modal-thanks-buy-content {
+    margin: 0 auto;
+    padding-left: 163px;
+    padding-right: 20px;
+
+    color: var(--color-white);
+
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .modal-thanks-buy h2 {
+    margin-bottom: 8px;
+    text-align: left;
+
+    color: #fcf1e0;
+
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+  }
+
+  .modal-thanks-buy span {
+    color: #fcf1e0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-} ;
+}
+
+/* Modal Thanks Review */
+
+.modal-thanks-review {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  height: 350px;
+  padding-top: 24px;
+  padding-right: 24px;
+  border-radius: 15px;
+
+  background-color: var(--color-orange);
+  background-image: url(../img/modal-thank-you/chocolate-bar.png);
+  background-repeat: no-repeat;
+  background-position: right 50px top 120px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .modal-thanks-buy {
+    background-image: url(../img/modal-thank-you/chocolate-bar-2x.png);
+  }
+}
+
+.modal-close-thanks-review {
+  margin-left: auto;
+  margin-bottom: 42px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border: transparent;
+  border-radius: 50%;
+
+  background: #fcf1e0;
+  stroke: linear-gradient(
+    to bottom,
+    rgba(241, 101, 41, 1),
+    rgba(212, 69, 40, 1)
+  );
+}
+
+.modal-thanks-review-content {
+  padding-left: 58px;
+  padding-right: 10px;
+
+  color: var(--color-white);
+
+  line-height: 1.14;
+}
+
+.modal-thanks-review h2 {
+  margin-bottom: 8px;
+  text-align: left;
+
+  color: rgba(252, 241, 224, 1);
+
+  letter-spacing: -0.02em;
+}
+
+@media screen and (min-width: 768px) {
+   {
+    .modal-thanks-buy {
+      width: 516px;
+      height: 414px;
+      padding-top: 24px;
+      padding-right: 24px;
+
+      background-image: url(../img/modal-thank-you/chocolate-bar-adaptive.png);
+      background-position: right 235px top 100px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .modal-thanks-buy {
+        background-image: url(../img/modal-thank-you/chocolate-bar-adaptive-2x.png);
+      }
+    }
+
+    .modal-close-thanks-review {
+      margin-bottom: 90px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .modal-close-review-buy-icon {
+      width: 22px;
+      height: 22px;
+    }
+
+    .modal-thanks-review-content {
+      margin: 0 auto;
+      padding-left: 163px;
+      padding-right: 20px;
+
+      color: var(--color-white);
+
+      font-size: 18px;
+      line-height: 1.33;
+    }
+
+    .modal-thanks-review h2 {
+      margin-bottom: 8px;
+      text-align: left;
+
+      color: #fcf1e0;
+
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: -0.02em;
+    }
+
+    .modal-thanks-review span {
+      color: #fcf1e0;
+    }
+  }
+}
