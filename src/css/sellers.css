@@ -1,11 +1,124 @@
+.sellers-wrap-text {
+    display: none;
+}
+
+.sellers-title {
+    margin-bottom: 32px;
+}
+
+.section-title-accent {
+    margin-right: 5px;
+}
+
+.sellers-text {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    width: 306px;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.sellers-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sellers-picture-three {
+    display: none;
+}
+
+.sellers-img-background {
+    border-radius: 15px;
+}
+
+.seller-wrap {
+    margin-bottom: 72px;
+}
+
+.buy-button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 28px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--color-white);
+    background: var(--color-orange);
+    border-radius: 100px;
+    border: none;
+    width: 120px;
+    height: 41px;
+    cursor: pointer;
+    transition: background, color cubic-bezier(0.61, 0.48, 0.94, 0.16);
+}
+
+.buy-button:hover,
+.buy-button:focus {
+    background: #FCF1E0;
+    color: var(--color-orange);
+}
+
 @media screen and (min-width: 375px) {}
 
 ;
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .sellers-text {
+        display: none;
+    }
 
+    .sellers-title {
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+    
+    .sellers-img {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 16px;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+
+    .seller-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 100px;
+    }
+
+    .sellers-wrap-text {
+        display: block;
+        font-weight: 400;
+        color: var(--color-black);
+        width: 306px; 
+    }
+
+    .buy-button {
+        width: 162px;
+        height: 50px;  
+        margin: 0;  
+        font-size: 18px;
+        padding: 14px 40px;
+    }
+}
 ;
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .sellers-picture-three {
+        display: block;
+    }
+    
+    .seller-wrap {
+        margin-bottom: 128px;
+    }
+
+    .sellers-wrap-text  {
+        width: 407px;
+    }
+}
 
 ;
