@@ -52,9 +52,9 @@
   align-items: center;
 }
 .modal-title {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 32px;
-  line-height: 1.16;
+  line-height: 1.2;
 }
 .modal-title-part {
   color: var(--color-orange);
@@ -143,12 +143,14 @@
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 25%;
+  top: 50%;
+  transform: translateY(-50%);
   left: 18px;
 }
 .modal-input-text {
   position: absolute;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
   left: 50px;
   font-weight: 500;
   font-size: 14px;
@@ -160,6 +162,7 @@
   content: '';
   position: absolute;
   top: 50%;
+  left: 32px;
   display: inline-block;
   width: 25px;
   height: 2px;
@@ -171,7 +174,8 @@
   width: 32px;
   height: 21px;
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 217px;
 }
 .modal-text-area {
@@ -247,6 +251,11 @@
     top: 24px;
     right: 24px;
   }
+  .modal-title {
+    font-size: 24px;
+    margin-bottom: 32px;
+    line-height: 1.16;
+  }
   .tablet-choco-items {
     display: flex;
     gap: 16px;
@@ -291,18 +300,20 @@
     margin-bottom: 0;
   }
   .phone-input {
-    padding-left: 149px;
+    padding-left: 177px;
   }
   .modal-icon-flag {
     width: 32px;
     height: 32px;
     position: absolute;
-    top: 25%;
+    top: 50%;
+    transform: translateY(-50%);
     left: 25px;
   }
   .modal-input-text {
     position: absolute;
-    top: 30%;
+    top: 50%;
+    transform: translateY(-50%);
     left: 74px;
     font-weight: 500;
     font-size: 18px;
@@ -310,12 +321,24 @@
     letter-spacing: -0.02em;
     color: #000000;
   }
+  .modal-input-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 62px;
+    display: inline-block;
+    width: 32px;
+    height: 2px;
+    background-color: rgba(17, 17, 17, 0.05);
+    rotate: 90deg;
+  }
 
   .modal-icon-mastercard {
     width: 44px;
     height: 30px;
     position: absolute;
-    top: 25%;
+    top: 50%;
+    transform: translateY(-50%);
     left: 445px;
   }
   .modal-text-area {
