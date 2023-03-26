@@ -12,7 +12,11 @@
     right: 0%;
     height: 100%;
     transform: translate(0, 0) scale(1);
+    transition: transform var(--transition-time) linear;
     background-color: var(--color-darkviolet);
+  }
+  .backdrop-menu.is-hidden .modal-menu {
+    transform: translate(100%, 0);
   }
   .menu-container {
     height: 100%;
@@ -39,6 +43,9 @@
     transform: scale(1);
     transition: stroke var(--transition-time) linear,
       transform var(--transition-time) linear;
+  }
+  .menu-btn-icon2 {
+    display: none;
   }
   .menu-btn-icon:is(:hover, :focus) {
     stroke: var(--color-orange);
@@ -110,10 +117,13 @@
     opacity: 0;
     transition: opacity var(--transition-time) linear;
   }
-  .modal-menu.is-hidden {
+  .is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transition: transform var(--transition-time) linear,
+      opacity var(--transition-time) linear,
+      visibility var(--transition-time) linear;
   }
 }
 @media screen and (min-width: 375px) {
@@ -123,7 +133,12 @@
     top: 0%;
     right: 0%;
     height: 100%;
-    transform: translate(0, 0) scale(1);
+    transform: translate(0, 0);
+    transition: transform var(--transition-time) linear;
+  }
+  .backdrop-menu.is-hidden .modal-menu {
+    transform: translate(100%, 0);
+    transition: transform var(--transition-time) linear;
   }
 }
 
@@ -135,13 +150,21 @@
     top: 0%;
     right: 0%;
     height: 100%;
-    transform: translate(0, 0) scale(1);
+    transform: translate(0, 0);
+    transition: transform var(--transition-time) linear;
+  }
+  .backdrop-menu.is-hidden .modal-menu {
+    transform: translate(100%, 0);
+    transition: transform var(--transition-time) linear;
   }
   .menu-button {
     top: 25px;
     right: 32px;
   }
   .menu-btn-icon {
+    display: none;
+  }
+  .menu-btn-icon2 {
     display: block;
     stroke: var(--color-white);
     width: 32px;
@@ -150,7 +173,7 @@
     transition: stroke var(--transition-time) linear,
       transform var(--transition-time) linear;
   }
-  .menu-btn-icon:is(:hover, :focus) {
+  .menu-btn-icon2:is(:hover, :focus) {
     stroke: var(--color-orange);
     transform: scale(1.25);
   }

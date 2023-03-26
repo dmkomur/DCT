@@ -155,7 +155,7 @@
     bottom: -4px;
     background-color: var(--color-orange);
     opacity: 0;
-    transition: opacity var(--transition-time) var(--transition-type);
+    transition: opacity var(--transition-time) linear;
   }
   .header-network-list {
     display: flex;
