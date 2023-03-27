@@ -66,10 +66,10 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
   }
-  .input-wrap {
+  .input-wrap-leave {
     position: relative;
   }
-  .input-wrap .phone-input {
+  .input-wrap-leave .phone-input {
     padding-left: 106px;
   }
   .leave-icon-flag {
@@ -157,7 +157,7 @@
     padding-left: 18px;
     font-size: 20px;
   }
-  .input-wrap .phone-input {
+  .input-wrap-leave .phone-input {
     font-size: 20px;
     padding-left: 149px;
   }
