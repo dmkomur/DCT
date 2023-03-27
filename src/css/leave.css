@@ -69,7 +69,7 @@
   .input-wrap {
     position: relative;
   }
-  .phone-input {
+  .input-wrap .phone-input {
     padding-left: 106px;
   }
   .leave-icon-flag {
@@ -157,7 +157,7 @@
     padding-left: 18px;
     font-size: 20px;
   }
-  .phone-input {
+  .input-wrap .phone-input {
     font-size: 20px;
     padding-left: 149px;
   }
