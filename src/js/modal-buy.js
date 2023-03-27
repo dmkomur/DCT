@@ -19,7 +19,8 @@
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
   }
-  function removeModal() {
+  function removeModal(e) {
+    e.preventDefault();
     refs.modalThanks.classList.toggle("is-hidden");
     refs.modal.classList.add("is-hidden");
   }

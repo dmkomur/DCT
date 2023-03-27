@@ -16,7 +16,8 @@
   function toggleModalLeave() {
     refs.leave.classList.toggle("is-hidden");
   }
-  function removeModalLeave() {
+  function removeModalLeave(e) {
+    e.preventDefault();
     refs.modalThanksReview.classList.toggle("is-hidden");
     refs.leave.classList.add("is-hidden");
   }
