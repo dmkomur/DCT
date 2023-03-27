@@ -148,7 +148,7 @@
     height: 890px;
     padding: 40px;
 
-    background-image: url(../img/chocolate-covered-cocoa-tablet.jpg);
+    background-image: url(../img/hero/chocolate-covered-cocoa-tablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -169,7 +169,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero-card {
-      background-image: url(../img/chocolate-covered-cocoa-table-2x.jpg);
+      background-image: url(../img/hero/chocolate-covered-cocoa-table-2x.jpg);
     }
   }
 
@@ -231,14 +231,14 @@
   .hero-card {
     max-width: 1036px;
     height: 600px;
-    background-image: url(../img/chocolate-covered-cocoa-desktop.jpg);
+    background-image: url(../img/hero/chocolate-covered-cocoa-desktop.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero-card {
-      background-image: url(../img/chocolate-covered-cocoa-desktop-2x.jpg);
+      background-image: url(../img/hero/chocolate-covered-cocoa-desktop-2x.jpg);
     }
   }
 }
