@@ -44,12 +44,18 @@
 .subscribe-btn {
   display: flex;
   justify-content: center;
-  align-items: center;
+  font-family: inherit;
   width: 128px;
   height: 41px;
   background-color: var(--color-orange);
   border: none;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #FFFFFF;
+  transition: background-color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .subscribe-btn:hover,
@@ -81,6 +87,8 @@
   .subscribe-btn {
     width: 172px;
     height: 50px;
+    font-size: 18px;
+    line-height: 1.22;
   }
 
   .subscribe-title {

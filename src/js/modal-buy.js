@@ -5,8 +5,8 @@
     modal: document.querySelector("[data-modal]"),
     modalSubscribe: document.querySelector("[data-modal-subscribe]"),
   
-    modalThanks: document.querySelector("[thanks-modal]"),
-    closeModalThanks: document.querySelector("[close-thanks-modal]"),
+    modalThanks: document.querySelector("[data-thanks-modal]"),
+    closeModalThanks: document.querySelector("[data-close-thanks-modal]"),
   };
   refs.openModalBtn.forEach((el) => {
   el.addEventListener("click", toggleModal);
@@ -19,8 +19,9 @@
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
   }
-  function removeModal() {
-    refs.modal.classList.add("is-hidden");
+  function removeModal(e) {
+    e.preventDefault();
     refs.modalThanks.classList.toggle("is-hidden");
+    refs.modal.classList.add("is-hidden");
   }
 })();
