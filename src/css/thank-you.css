@@ -29,8 +29,8 @@
   background-color: var(--color-orange);
   background-image: url(../img/modal-thank-you/chocolate-bar.webp);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left bottom;
+  background-size: auto auto;
+  background-position: bottom left;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -39,6 +39,7 @@
   (min-resolution: 2dppx) {
   .modal-thanks-buy {
     background-image: url(../img/modal-thank-you/chocolate-bar-2x.webp);
+    background-size: 90%;
   }
 }
 
@@ -90,15 +91,15 @@
     padding-right: 24px;
     padding-left: 163px;
 
-    background-image: url(..//img/modal-thank-you/chocolate-bar-adaptive.webp);
-    background-position: right 235px top 100px;
+    background-image: url(../img/modal-thank-you/chocolate-bar-adaptive.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .modal-thanks-buy {
-      background-image: url(..//img/modal-thank-you/chocolate-bar-adaptive-2x.webp);
+      background-image: url(../img/modal-thank-you/chocolate-bar-adaptive-2x.webp);
+      background-size: 56% auto;
     }
   }
 
