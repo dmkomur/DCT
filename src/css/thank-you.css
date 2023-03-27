@@ -1,11 +1,143 @@
-@media screen and (min-width: 375px) {}
+/* General styles */
 
-;
+/* Gradient for close-icon */
+#modal-close-icon-gradient {
+  --color-stop-1: #f16529;
+  --color-stop-2: #d44528;
+}
 
-@media screen and (min-width: 768px) {}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 
-;
+/* Modal Thanks Buy */
 
-@media screen and (min-width: 1200px) {}
+.modal-thanks-buy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  height: 350px;
+  padding-top: 14px;
+  padding-right: 14px;
+  padding-left: 68px;
+  border-radius: 15px;
 
-;
+  background-color: var(--color-orange);
+  background-image: url(../img/modal-thank-you/chocolate-bar.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .modal-thanks-buy {
+    background-image: url(../img/modal-thank-you/chocolate-bar-2x.webp);
+  }
+}
+
+.modal-close-thanks-buy {
+  margin-left: auto;
+  margin-bottom: 42px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border: transparent;
+  border-radius: 50%;
+
+  background: #fcf1e0;
+}
+
+.modal-close-thanks-buy-icon {
+  stroke: url(#modal-close-icon-gradient);
+}
+
+.modal-thanks-buy-content {
+  width: 219px;
+
+  color: var(--color-white);
+
+  line-height: 1.14;
+}
+
+.modal-thanks-buy h2 {
+  margin-bottom: 8px;
+  text-align: left;
+
+  color: #fcf1e0;
+
+  letter-spacing: -0.02em;
+}
+
+.modal-thanks-buy span {
+  color: #fcf1e0;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-thanks-buy {
+    width: 516px;
+    height: 414px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 163px;
+
+    background-image: url(..//img/modal-thank-you/chocolate-bar-adaptive.webp);
+    background-position: right 235px top 100px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modal-thanks-buy {
+      background-image: url(..//img/modal-thank-you/chocolate-bar-adaptive-2x.webp);
+    }
+  }
+
+  .modal-close-thanks-buy {
+    margin-bottom: 90px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .modal-close-thanks-buy-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .modal-thanks-buy-content {
+    margin: 0 auto;
+    width: 309px;
+
+    color: var(--color-white);
+
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .modal-thanks-buy h2 {
+    margin-bottom: 8px;
+    text-align: left;
+
+    color: #fcf1e0;
+
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+  }
+
+  .modal-thanks-buy span {
+    color: #fcf1e0;
+
+    font-size: 24px;
+    line-height: 1;
+  }
+}
