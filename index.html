@@ -28,7 +28,7 @@
     />
     
     <script type="module" crossorigin src="/DCT/assets/index-81628c76.js"></script>
-    <link rel="stylesheet" href="/DCT/assets/index-90aaa6cc.css">
+    <link rel="stylesheet" href="/DCT/assets/index-32e5b1d8.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -1091,19 +1091,24 @@
           id="leave-name"
           type="text"
           placeholder="Name"
+          pattern="\w{3,16}"
+          required
         />
         <input
           class="leave-input"
           id="leave-email"
           type="email"
           placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         />
-        <div class="input-wrap">
+        <div class="input-wrap-leave">
           <input
             class="leave-input phone-input"
             id="leave-phone"
             type="text"
             placeholder="Phone number"
+            pattern="[0-9]{9}"
+            required
           />
           <svg class="leave-icon-flag">
             <use href="../img/icons.svg#icon-flag"></use>
