@@ -230,7 +230,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero-card {
-    max-width: 1036px;
+    max-width: 1136px;
     height: 600px;
     background-image: url(../img/hero/chocolate-covered-cocoa-desktop.jpg);
   }
