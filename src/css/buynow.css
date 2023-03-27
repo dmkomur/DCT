@@ -7,11 +7,13 @@
   overflow: auto;
   transition: opacity 250ms linear, visibility 250ms linear;
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
+
 .buy-btn {
   position: absolute;
   background-color: transparent;
@@ -20,6 +22,7 @@
   right: 14px;
   padding: 0 0 0 0;
 }
+
 .buy-btn-icon {
   display: block;
   stroke: var(--color-black);
@@ -29,9 +32,11 @@
   transition: stroke var(--transition-time) linear,
     transform var(--transition-time) linear;
 }
+
 .buy-btn-icon2 {
   display: none;
 }
+
 .buy-btn-icon:is(:hover, :focus) {
   stroke: var(--color-orange);
   transform: scale(1.286);
@@ -56,11 +61,13 @@
   justify-content: center;
   align-items: center;
 }
+
 .modal-title {
   font-size: 20px;
   margin-bottom: 32px;
   line-height: 1.2;
 }
+
 .modal-title-part {
   color: var(--color-orange);
 }
@@ -78,9 +85,11 @@
   border-radius: 15px;
   margin-bottom: 59px;
 }
-.tablet-choco-items {
+
+.modal-list-items-hide {
   display: none;
 }
+
 .modal-item-info {
   display: flex;
   justify-content: center;
@@ -101,6 +110,7 @@
   display: block;
   margin-bottom: 18px;
 }
+
 .modal-input {
   width: 100%;
   height: 45px;
@@ -112,9 +122,11 @@
   outline: transparent;
   transition: border-color var(--transition-time) linear;
 }
+
 .modal-input:focus {
   border-color: var(--color-orange);
 }
+
 .modal-input::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -140,9 +152,11 @@
 .name-input {
   margin-bottom: 14px;
 }
+
 .input-wrap {
   position: relative;
 }
+
 .modal-icon-flag {
   width: 24px;
   height: 24px;
@@ -151,6 +165,7 @@
   transform: translateY(-50%);
   left: 18px;
 }
+
 .modal-input-text {
   position: absolute;
   top: 50%;
@@ -162,6 +177,7 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+
 .modal-input-text::after {
   content: '';
   position: absolute;
@@ -182,6 +198,7 @@
   transform: translateY(-50%);
   left: 217px;
 }
+
 .modal-text-area {
   display: block;
   margin-bottom: 8px;
@@ -191,6 +208,7 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+
 .modal-comment {
   width: 100%;
   height: 91px;
@@ -202,6 +220,7 @@
   outline: transparent;
   transition: border-color var(--transition-time) linear;
 }
+
 .modal-comment::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -209,9 +228,11 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
+
 .modal-comment:focus {
   border-color: var(--color-orange);
 }
+
 .modal-btn {
   display: flex;
   justify-content: center;
@@ -227,6 +248,7 @@
   transition: color var(--transition-time) linear,
     background-color var(--transition-time) linear;
 }
+
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #fcf1e0;
@@ -240,19 +262,23 @@
     height: 1007px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .modal-page {
     width: 609px;
     height: 1058px;
     padding: 48px 48px;
   }
+
   .buy-btn {
     top: 24px;
     right: 24px;
   }
+
   .buy-btn-icon {
     display: none;
   }
+
   .buy-btn-icon2 {
     display: block;
     stroke: var(--color-black);
@@ -262,23 +288,28 @@
     transition: stroke var(--transition-time) linear,
       transform var(--transition-time) linear;
   }
+
   .buy-btn-icon2:is(:hover, :focus) {
     stroke: var(--color-orange);
     transform: scale(1.25);
   }
+
   .modal-title {
     font-size: 24px;
     margin-bottom: 32px;
     line-height: 1.16;
   }
+
   .tablet-choco-items {
     display: flex;
     gap: 16px;
   }
+
   .modal-list {
     display: flex;
     gap: 16px;
   }
+
   .modal-list-items {
     display: flex;
     flex-direction: column;
@@ -292,31 +323,39 @@
     border-radius: 15px;
     margin-bottom: 40px;
   }
+
   .modal-item-info {
     margin-top: 14px;
   }
+
   .modal-field-text {
     font-size: 14px;
     line-height: 1.29;
   }
+
   .personal-info {
     display: flex;
     gap: 21px;
   }
+
   .modal-input {
     display: flex;
     height: 66px;
   }
+
   .modal-input::placeholder {
     font-size: 18px;
     line-height: 1.22;
   }
+
   .name-input {
     margin-bottom: 0;
   }
+
   .phone-input {
     padding-left: 177px;
   }
+
   .modal-icon-flag {
     width: 32px;
     height: 32px;
@@ -325,6 +364,7 @@
     transform: translateY(-50%);
     left: 25px;
   }
+
   .modal-input-text {
     position: absolute;
     top: 50%;
@@ -336,6 +376,7 @@
     letter-spacing: -0.02em;
     color: #000000;
   }
+
   .modal-input-text::after {
     content: '';
     position: absolute;
@@ -356,22 +397,25 @@
     transform: translateY(-50%);
     left: 445px;
   }
+
   .modal-text-area {
     font-size: 14px;
     line-height: 1.29;
   }
+
   .modal-comment::placeholder {
     font-size: 18px;
     line-height: 1.22;
   }
+
   .modal-comment {
     height: 137px;
   }
+
   .modal-btn {
     width: 133px;
     height: 45px;
   }
 
-  @media screen and (min-width: 1200px) {
-  }
+  @media screen and (min-width: 1200px) {}
 }

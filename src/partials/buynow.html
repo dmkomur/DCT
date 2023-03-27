@@ -24,53 +24,52 @@
           />
           <p class="modal-item-info">100 g</p>
         </li>
-        <div class="tablet-choco-items">
-          <li class="modal-list-items">
-            <img
-              srcset="
-                ./img/modal-picture/white-chock-mob.jpg    1x,
-                ./img/modal-picture/white-chock-mob-2x.jpg 2x
-              "
-              src="./img/modal-picture/white-chock-mob.jpg"
-              alt="chocolate"
-            />
-            <p class="modal-item-info">200 g</p>
-          </li>
-          <li class="modal-list-items">
-            <img
-              srcset="
-                ./img/modal-picture/chocolate-bar-mob.jpg    1x,
-                ./img/modal-picture/chocolate-bar-mob-2x.jpg 2x
-              "
-              src="./img/modal-picture/chocolate-bar-mob.jpg"
-              alt="chocolate"
-            />
-            <p class="modal-item-info">300 g</p>
-          </li>
-        </div>
+
+        <li class="modal-list-items modal-list-items-hide">
+          <img
+            srcset="
+              ./img/modal-picture/white-chock-mob.jpg    1x,
+              ./img/modal-picture/white-chock-mob-2x.jpg 2x
+            "
+            src="./img/modal-picture/white-chock-mob.jpg"
+            alt="chocolate"
+          />
+          <p class="modal-item-info">200 g</p>
+        </li>
+        <li class="modal-list-items modal-list-items-hide">
+          <img
+            srcset="
+              ./img/modal-picture/chocolate-bar-mob.jpg    1x,
+              ./img/modal-picture/chocolate-bar-mob-2x.jpg 2x
+            "
+            src="./img/modal-picture/chocolate-bar-mob.jpg"
+            alt="chocolate"
+          />
+          <p class="modal-item-info">300 g</p>
+        </li>
       </ul>
     </div>
     <form class="modal-form">
-      <label class="modal-field">
-        <span class="modal-field-text">Personal information</span>
-        <div class="personal-info">
-          <input
-            class="modal-input name-input"
-            type="text"
-            name="user-name"
-            placeholder="Name"
-            pattern="\w{3,16}"
-            required
-          />
-          <input
-            class="modal-input"
-            type="text"
-            name="user-surname"
-            placeholder="Surname"
-            pattern="\w{3,25}"
-          />
-        </div>
-      </label>
+      <label class="modal-field"></label>
+      <span class="modal-field-text">Personal information</span>
+      <div class="personal-info">
+        <input
+          class="modal-input name-input"
+          type="text"
+          name="user-name"
+          placeholder="Name"
+          pattern="\w{3,16}"
+          required
+        />
+        <input
+          class="modal-input"
+          type="text"
+          name="user-surname"
+          placeholder="Surname"
+          pattern="\w{3,25}"
+        />
+      </div>
+
       <label class="modal-field">
         <span class="modal-field-text">Email</span>
         <input
