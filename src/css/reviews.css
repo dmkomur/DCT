@@ -55,6 +55,7 @@
     margin-bottom: 72px;
     width: 165px;
     height: 41px;
+    font-family: inherit;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
@@ -64,12 +65,13 @@
     border-radius: 100px;
     background: transparent;
     cursor: pointer;
-    transition: background, color cubic-bezier(0.61, 0.48, 0.94, 0.16);
+    transition: background-color 250ms linear;
+    transition: color 250ms linear;
 }
 
 .reviews-button:hover,
 .reviews-button:focus {
-    background: var(--color-orange);
+    background-color: var(--color-orange);
     color: var(--color-white);
 }
 
