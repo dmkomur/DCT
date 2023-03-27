@@ -23,12 +23,14 @@
   height: 350px;
   padding-top: 14px;
   padding-right: 14px;
+  padding-left: 68px;
   border-radius: 15px;
 
   background-color: var(--color-orange);
-  background-image: url(../img/modal-thank-you/chocolate-bar.png);
+  background-image: url(../img/modal-thank-you/chocolate-bar.webp);
   background-repeat: no-repeat;
-  background-position: right 50px top 120px;
+  background-size: contain;
+  background-position: left bottom;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -36,7 +38,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .modal-thanks-buy {
-    background-image: url(../img/modal-thank-you/chocolate-bar-2x.png);
+    background-image: url(../img/modal-thank-you/chocolate-bar-2x.webp);
   }
 }
 
@@ -60,8 +62,7 @@
 }
 
 .modal-thanks-buy-content {
-  padding-left: 68px;
-  padding-right: 10px;
+  width: 219px;
 
   color: var(--color-white);
 
@@ -87,8 +88,9 @@
     height: 414px;
     padding-top: 24px;
     padding-right: 24px;
+    padding-left: 163px;
 
-    background-image: url(../img/modal-thank-you/chocolate-bar-adaptive.png);
+    background-image: url(..//img/modal-thank-you/chocolate-bar-adaptive.webp);
     background-position: right 235px top 100px;
   }
 
@@ -96,7 +98,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .modal-thanks-buy {
-      background-image: url(../img/modal-thank-you/chocolate-bar-adaptive-2x.png);
+      background-image: url(..//img/modal-thank-you/chocolate-bar-adaptive-2x.webp);
     }
   }
 
@@ -113,8 +115,7 @@
 
   .modal-thanks-buy-content {
     margin: 0 auto;
-    padding-left: 163px;
-    padding-right: 20px;
+    width: 309px;
 
     color: var(--color-white);
 
@@ -135,122 +136,8 @@
 
   .modal-thanks-buy span {
     color: #fcf1e0;
-  }
-}
-
-/* Modal Thanks Review */
-
-.modal-thanks-review {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 311px;
-  height: 350px;
-  padding-top: 14px;
-  padding-right: 14px;
-  border-radius: 15px;
-
-  background-color: var(--color-orange);
-  background-image: url(../img/modal-thank-you/chocolate-bar.png);
-  background-repeat: no-repeat;
-  background-position: right 50px top 120px;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .modal-thanks-buy {
-    background-image: url(../img/modal-thank-you/chocolate-bar-adaptive-2x.png);
-  }
-}
-
-.modal-close-thanks-review {
-  margin-left: auto;
-  margin-bottom: 42px;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 28px;
-  height: 28px;
-  border: transparent;
-  border-radius: 50%;
-
-  background: #fcf1e0;
-}
-
-.modal-close-thanks-review-icon {
-  stroke: url(#modal-close-icon-gradient);
-}
-
-.modal-thanks-review-content {
-  padding-left: 58px;
-  padding-right: 10px;
-
-  color: var(--color-white);
-
-  line-height: 1.14;
-}
-
-.modal-thanks-review h2 {
-  margin-bottom: 8px;
-  text-align: left;
-
-  color: #fcf1e0;
-
-  letter-spacing: -0.02em;
-}
-
-@media screen and (min-width: 768px) {
-  .modal-thanks-review {
-    width: 516px;
-    height: 414px;
-    padding-top: 24px;
-    padding-right: 24px;
-
-    background-image: url(../img/modal-thank-you/chocolate-bar-adaptive.png);
-    background-position: right 235px top 100px;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .modal-thanks-review {
-      background-image: url(../img/modal-thank-you/chocolate-bar-adaptive-2x.png);
-    }
-  }
-
-  .modal-close-thanks-review {
-    margin-bottom: 90px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .modal-close-thanks-review-icon {
-    width: 22px;
-    height: 22px;
-  }
-
-  .modal-thanks-review-content {
-    margin: 0 auto;
-    padding-left: 163px;
-    padding-right: 20px;
-
-    color: var(--color-white);
-
-    font-size: 18px;
-    line-height: 1.33;
-  }
-
-  .modal-thanks-review h2 {
-    margin-bottom: 8px;
-    text-align: left;
-
-    color: #fcf1e0;
 
     font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
+    line-height: 1;
   }
 }
