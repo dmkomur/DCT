@@ -27,7 +27,7 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/DCT/assets/index-a8e87bf6.js"></script>
+    <script type="module" crossorigin src="/DCT/assets/index-be016d15.js"></script>
     <link rel="stylesheet" href="/DCT/assets/index-0f882aaa.css">
   </head>
   <body>
@@ -1123,10 +1123,14 @@
   </div>
 </div>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-thanks-modal>
   <!-- Modal Thanks Buy -->
   <div class="modal-thanks-buy">
-    <button type="button" class="modal-close-thanks-buy">
+    <button
+      type="button"
+      class="modal-close-thanks-buy"
+      data-close-thanks-modal
+    >
       <svg class="modal-close-thanks-buy-icon" width="16" height="16">
         <use href="../img/icons.svg#icon-close-btn-small"></use>
       </svg>
@@ -1209,15 +1213,21 @@
           placeholder="Enter text"
         ></textarea>
       </div>
-      <button class="btn modal-btn" type="submit">Send</button>
+      <button class="btn modal-btn" type="submit" data-modal-send-btn>
+        Send
+      </button>
     </form>
   </div>
 </div>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-thanks-review-modal>
   <!-- Modal Thanks Review -->
   <div class="modal-thanks-review">
-    <button type="button" class="modal-close-thanks-review">
+    <button
+      type="button"
+      class="modal-close-thanks-review"
+      data-close-thanks-review
+    >
       <svg class="modal-close-thanks-review-icon" width="16" height="16">
         <use href="../img/icons.svg#icon-close-btn-small"></use>
       </svg>
