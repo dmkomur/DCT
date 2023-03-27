@@ -147,7 +147,7 @@
   }
   .header-navigation-link::after {
     content: '';
-    width: 50%;
+    width: 60%;
     height: 0.5px;
     position: absolute;
     display: block;
