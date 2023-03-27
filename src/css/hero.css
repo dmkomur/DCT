@@ -17,8 +17,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-card {
     background-image: url(../img/hero/chocolate-covered-cocoa-mob-2x.jpg);
   }
@@ -51,7 +51,8 @@
   color: var(--color-white);
   background-color: var(--color-orange);
   border: none;
-  transition: color, background-color var(--transition-time) linear;
+  transition: color var(--transition-time) linear,
+    background-color var(--transition-time) linear;
 }
 
 .hero-btn:hover,
@@ -91,7 +92,7 @@
   cursor: pointer;
 }
 
-.scroll-down:is(:hover, :focus)>.hero-scroll-text {
+.scroll-down:is(:hover, :focus) > .hero-scroll-text {
   color: var(--color-orange);
 }
 
@@ -166,8 +167,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero-card {
       background-image: url(../img/hero/chocolate-covered-cocoa-table-2x.jpg);
     }
@@ -235,8 +236,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero-card {
       background-image: url(../img/hero/chocolate-covered-cocoa-desktop-2x.jpg);
     }
