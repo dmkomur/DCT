@@ -1,11 +1,5 @@
 /* General styles */
 
-/* Gradient for close-icon */
-#modal-close-icon-gradient {
-  --color-stop-1: #f16529;
-  --color-stop-2: #d44528;
-}
-
 /* Modal Thanks Review */
 
 .modal-thanks-review {
