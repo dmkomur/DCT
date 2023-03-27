@@ -42,6 +42,7 @@
     margin: 0 auto;
     padding: 12px 28px;
     margin-top: 20px;
+    font-family: inherit;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
@@ -52,12 +53,13 @@
     width: 120px;
     height: 41px;
     cursor: pointer;
-    transition: background, color cubic-bezier(0.61, 0.48, 0.94, 0.16);
+    transition: background-color 250ms linear;
+    transition: color 250ms linear;
 }
 
 .buy-button:hover,
 .buy-button:focus {
-    background: #FCF1E0;
+    background-color: #FCF1E0;
     color: var(--color-orange);
 }
 
@@ -74,7 +76,7 @@
         margin-bottom: 50px;
         font-size: 24px;
     }
-    
+
     .sellers-img {
         display: flex;
         flex-wrap: nowrap;
@@ -94,29 +96,30 @@
         display: block;
         font-weight: 400;
         color: var(--color-black);
-        width: 306px; 
+        width: 306px;
     }
 
     .buy-button {
         width: 162px;
-        height: 50px;  
-        margin: 0;  
+        height: 50px;
+        margin: 0;
         font-size: 18px;
         padding: 14px 40px;
     }
 }
+
 ;
 
 @media screen and (min-width: 1200px) {
     .sellers-picture-three {
         display: block;
     }
-    
+
     .seller-wrap {
         margin-bottom: 128px;
     }
 
-    .sellers-wrap-text  {
+    .sellers-wrap-text {
         width: 407px;
     }
 }

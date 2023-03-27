@@ -1,31 +1,48 @@
-.backdrop-modal-page {
+.backdrop {
   position: fixed;
   top: 0;
   background-color: rgba(46, 47, 66, 0.4);
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  transition: opacity 250ms cubic-bezier(0.61, 0.48, 0.94, 0.16),
-    visibility 250ms cubic-bezier(0.61, 0.48, 0.94, 0.16);
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
-.backdrop-modal-page.is-hidden {
+
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: 0;
+  visibility: hidden;
 }
-.modal-close-btn {
+
+.buy-btn {
   position: absolute;
+  background-color: transparent;
+  border: none;
   top: 14px;
   right: 14px;
   padding: 0 0 0 0;
-  background-color: var(--color-bgwhite);
-  border: none;
 }
-.modal-close-icon {
-  display: inline-block;
+
+.buy-btn-icon {
+  display: block;
+  stroke: var(--color-black);
   width: 24px;
   height: 24px;
-  stroke: #111111;
+  transform: scale(1);
+  transition: stroke var(--transition-time) linear,
+    transform var(--transition-time) linear;
+}
+.personal-info {
+  margin-bottom: 18px;
+}
+
+.buy-btn-icon2 {
+  display: none;
+}
+
+.buy-btn-icon:is(:hover, :focus) {
+  stroke: var(--color-orange);
+  transform: scale(1.286);
 }
 
 .modal-page {
@@ -47,27 +64,17 @@
   justify-content: center;
   align-items: center;
 }
+
 .modal-title {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 32px;
-  line-height: 1.16;
+  line-height: 1.2;
 }
+
 .modal-title-part {
   color: var(--color-orange);
 }
-/* .moda-item-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 32px 32px 28px 32px;
-  width: 231px;
-  height: 257px;
-  background-color: var(--color-white);
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 15px;
-  margin-bottom: 59px;
-} */
+
 .modal-list-items {
   display: flex;
   flex-direction: column;
@@ -81,9 +88,11 @@
   border-radius: 15px;
   margin-bottom: 59px;
 }
-.tablet-choco-items {
+
+.modal-list-items-hide {
   display: none;
 }
+
 .modal-item-info {
   display: flex;
   justify-content: center;
@@ -99,11 +108,13 @@
   border-radius: 100px;
   margin-top: 16px;
 }
-
-.modal-field {
-  display: block;
+.field-email {
   margin-bottom: 18px;
 }
+.modal-field {
+  display: block;
+}
+
 .modal-input {
   width: 100%;
   height: 45px;
@@ -112,7 +123,14 @@
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 18px;
+  outline: transparent;
+  transition: border-color var(--transition-time) linear;
 }
+
+.modal-input:focus {
+  border-color: var(--color-orange);
+}
+
 .modal-input::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -138,19 +156,25 @@
 .name-input {
   margin-bottom: 14px;
 }
+
 .input-wrap {
   position: relative;
+  margin-bottom: 18px;
 }
+
 .modal-icon-flag {
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 25%;
+  top: 50%;
+  transform: translateY(-50%);
   left: 18px;
 }
+
 .modal-input-text {
   position: absolute;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
   left: 50px;
   font-weight: 500;
   font-size: 14px;
@@ -158,10 +182,12 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+
 .modal-input-text::after {
   content: '';
   position: absolute;
   top: 50%;
+  left: 32px;
   display: inline-block;
   width: 25px;
   height: 2px;
@@ -173,9 +199,11 @@
   width: 32px;
   height: 21px;
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 217px;
 }
+
 .modal-text-area {
   display: block;
   margin-bottom: 8px;
@@ -185,6 +213,7 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+
 .modal-comment {
   width: 100%;
   height: 91px;
@@ -193,7 +222,10 @@
   resize: none;
   padding: 14px 18px;
   margin-bottom: 18px;
+  outline: transparent;
+  transition: border-color var(--transition-time) linear;
 }
+
 .modal-comment::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -201,6 +233,11 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
+
+.modal-comment:focus {
+  border-color: var(--color-orange);
+}
+
 .modal-btn {
   display: flex;
   justify-content: center;
@@ -213,8 +250,10 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.17;
-  transition: background-color, color 250ms cubic-bezier(0.61, 0.48, 0.94, 0.16);
+  transition: color var(--transition-time) linear,
+    background-color var(--transition-time) linear;
 }
+
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #fcf1e0;
@@ -228,29 +267,54 @@
     height: 1007px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .modal-page {
     width: 609px;
     height: 1058px;
     padding: 48px 48px;
   }
-  .modal-close-icon {
-    width: 28px;
-    height: 28px;
-    stroke: #111111;
-  }
-  .modal-close-btn {
+
+  .buy-btn {
     top: 24px;
     right: 24px;
   }
+
+  .buy-btn-icon {
+    display: none;
+  }
+
+  .buy-btn-icon2 {
+    display: block;
+    stroke: var(--color-black);
+    width: 28px;
+    height: 28px;
+    transform: scale(1);
+    transition: stroke var(--transition-time) linear,
+      transform var(--transition-time) linear;
+  }
+
+  .buy-btn-icon2:is(:hover, :focus) {
+    stroke: var(--color-orange);
+    transform: scale(1.25);
+  }
+
+  .modal-title {
+    font-size: 24px;
+    margin-bottom: 32px;
+    line-height: 1.16;
+  }
+
   .tablet-choco-items {
     display: flex;
     gap: 16px;
   }
+
   .modal-list {
     display: flex;
     gap: 16px;
   }
+
   .modal-list-items {
     display: flex;
     flex-direction: column;
@@ -264,41 +328,53 @@
     border-radius: 15px;
     margin-bottom: 40px;
   }
+
   .modal-item-info {
     margin-top: 14px;
   }
+
   .modal-field-text {
     font-size: 14px;
     line-height: 1.29;
   }
+
   .personal-info {
     display: flex;
     gap: 21px;
+    margin-bottom: 18px;
   }
+
   .modal-input {
     display: flex;
     height: 66px;
   }
+
   .modal-input::placeholder {
     font-size: 18px;
     line-height: 1.22;
   }
+
   .name-input {
     margin-bottom: 0;
   }
+
   .phone-input {
-    padding-left: 149px;
+    padding-left: 177px;
   }
+
   .modal-icon-flag {
     width: 32px;
     height: 32px;
     position: absolute;
-    top: 25%;
+    top: 50%;
+    transform: translateY(-50%);
     left: 25px;
   }
+
   .modal-input-text {
     position: absolute;
-    top: 30%;
+    top: 50%;
+    transform: translateY(-50%);
     left: 74px;
     font-weight: 500;
     font-size: 18px;
@@ -307,24 +383,41 @@
     color: #000000;
   }
 
+  .modal-input-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 62px;
+    display: inline-block;
+    width: 32px;
+    height: 2px;
+    background-color: rgba(17, 17, 17, 0.05);
+    rotate: 90deg;
+  }
+
   .modal-icon-mastercard {
     width: 44px;
     height: 30px;
     position: absolute;
-    top: 25%;
+    top: 50%;
+    transform: translateY(-50%);
     left: 445px;
   }
+
   .modal-text-area {
     font-size: 14px;
     line-height: 1.29;
   }
+
   .modal-comment::placeholder {
     font-size: 18px;
     line-height: 1.22;
   }
+
   .modal-comment {
     height: 137px;
   }
+
   .modal-btn {
     width: 133px;
     height: 45px;

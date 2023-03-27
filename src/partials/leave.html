@@ -1,0 +1,59 @@
+<div class="backdrop is-hidden" data-modal-leave>
+  <div class="leave-card">
+    <button class="leave-button" type="button" data-modal-leave-close>
+      <svg class="leave-btn-icon">
+        <use href="./img/icons.svg#icon-close-btn-small"></use>
+      </svg>
+      <svg class="leave-btn-icon2">
+        <use href="./img/icons.svg#icon-close-btn-big"></use>
+      </svg>
+    </button>
+    <h2 class="section-title modal-title">
+      LEAVE A REVIEW <br class="space-for-title" />
+      ABOUT
+      <span class="modal-title-part"> OUR CHOCOLATE</span>
+    </h2>
+    <form class="leave-modal-form">
+      <div class="form-wrap">
+        <input
+          class="leave-input"
+          id="leave-name"
+          type="text"
+          placeholder="Name"
+          pattern="\w{3,16}"
+          required
+        />
+        <input
+          class="leave-input"
+          id="leave-email"
+          type="email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+        <div class="input-wrap-leave">
+          <input
+            class="leave-input phone-input"
+            id="leave-phone"
+            type="text"
+            placeholder="Phone number"
+            pattern="[0-9]{9}"
+            required
+          />
+          <svg class="leave-icon-flag">
+            <use href="./img/icons.svg#icon-flag"></use>
+          </svg>
+          <span class="leave-input-text">+380</span>
+        </div>
+        <textarea
+          class="leave-comment"
+          name="leave-comment"
+          id="leave-comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+      <button class="btn modal-btn" type="submit" data-modal-send-btn>
+        Send
+      </button>
+    </form>
+  </div>
+</div>
