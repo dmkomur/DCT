@@ -23,15 +23,17 @@
   background-color: var(--color-orange);
   background-image: url(../img/modal-thank-you/chocolate-bar.webp);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left bottom;
+  background-size: auto auto;
+  background-position: bottom left;
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .modal-thanks-buy {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .modal-thanks-review {
     background-image: url(../img/modal-thank-you/chocolate-bar-2x.webp);
+    background-size: 90%;
   }
 }
 
@@ -54,23 +56,25 @@
   stroke: url(#modal-close-icon-gradient);
 }
 
-.modal-thanks-review-content {
-  color: var(--color-white);
-
-  line-height: 1.14;
-}
-
 .modal-thanks-review h2 {
   margin-bottom: 8px;
   text-align: left;
 
   color: #fcf1e0;
 
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
 .modal-thanks-review p {
-  width: 170px;
+  width: 164px;
+
+  color: var(--color-white);
+
+  line-height: 1.14;
 }
 
 @media screen and (min-width: 768px) {
@@ -85,10 +89,11 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .modal-thanks-review {
       background-image: url(../img/modal-thank-you/chocolate-bar-adaptive-2x.webp);
+      background-size: 56% auto;
     }
   }
 
@@ -103,16 +108,6 @@
     height: 22px;
   }
 
-  .modal-thanks-review-content {
-    padding-right: 20px;
-    width: 170px;
-
-    color: var(--color-white);
-
-    font-size: 18px;
-    line-height: 1.33;
-  }
-
   .modal-thanks-review h2 {
     margin-bottom: 8px;
     text-align: left;
@@ -121,10 +116,15 @@
 
     font-size: 24px;
     line-height: 1.17;
-    letter-spacing: -0.02em;
   }
 
   .modal-thanks-review p {
-    width: 297px;
+    display: block;
+    width: 100%;
+
+    color: var(--color-white);
+
+    font-size: 18px;
+    line-height: 1.33;
   }
 }
