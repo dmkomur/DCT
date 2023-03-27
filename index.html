@@ -28,7 +28,7 @@
     />
     
     <script type="module" crossorigin src="/DCT/assets/index-a8e87bf6.js"></script>
-    <link rel="stylesheet" href="/DCT/assets/index-8246ed97.css">
+    <link rel="stylesheet" href="/DCT/assets/index-0f882aaa.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -508,7 +508,7 @@
   </div>
 </section>
 
-      <section class="products">
+      <section class="products" id="products">
   <div class="container conteiner-swiper">
     <h2 class="section-title title-margin">
       Our <span class="section-title-accent">pRODUCTS</span>
@@ -627,7 +627,7 @@
   </div>
 </section>
 
-      <section class="sellers">
+      <section class="sellers" id="sellers">
   <div class="container">
     <h2 class="sellers-title section-title">
       <span class="section-title-accent">TOP</span>SELLERS
@@ -720,7 +720,7 @@
   </div>
 </section>
 
-      <section class="reviews">
+      <section class="reviews" id="reviews">
   <div class="container">
     <h2 class="reviews-title section-title">
       <span class="section-title-accent">CHOCOLATE</span>IS LOVED
@@ -1123,41 +1123,43 @@
   </div>
 </div>
 
-    <!-- Modal Thanks Buy -->
-<div class="modal-thanks-buy">
-  <button type="button" class="modal-close-thanks-buy">
-    <svg class="modal-close-thanks-buy-icon" width="16" height="16">
-      <use href="../img/icons.svg#icon-close-btn-small"></use>
-    </svg>
-  </button>
-  <div class="modal-thanks-buy-content">
-    <h2 class="section-title">thank you!</h2>
-    <p>
-      We are glad that you ordered our chocolate and we are giving you a
-      <span>20%</span>
-      discount on all our products.
-    </p>
+    <div class="backdrop is-hidden">
+  <!-- Modal Thanks Buy -->
+  <div class="modal-thanks-buy">
+    <button type="button" class="modal-close-thanks-buy">
+      <svg class="modal-close-thanks-buy-icon" width="16" height="16">
+        <use href="../img/icons.svg#icon-close-btn-small"></use>
+      </svg>
+    </button>
+    <div class="modal-thanks-buy-content">
+      <h2 class="section-title">thank you!</h2>
+      <p>
+        We are glad that you ordered our chocolate and we are giving you a
+        <span>20%</span>
+        discount on all our products.
+      </p>
+    </div>
   </div>
-</div>
 
-<!-- Gradient for close-icon -->
-<svg
-  style="width: 0; height: 0; position: absolute"
-  aria-hidden="true"
-  focusable="false"
->
-  <linearGradient
-    id="modal-close-icon-gradient"
-    x1="8.03478"
-    y1="4"
-    x2="7.76142"
-    y2="11.9918"
-    gradientUnits="userSpaceOnUse"
+  <!-- Gradient for close-icon -->
+  <svg
+    style="width: 0; height: 0; position: absolute"
+    aria-hidden="true"
+    focusable="false"
   >
-    <stop stop-color="var(--color-stop-1)" />
-    <stop offset="1" stop-color="var(--color-stop-2)" />
-  </linearGradient>
-</svg>
+    <linearGradient
+      id="modal-close-icon-gradient"
+      x1="8.03478"
+      y1="4"
+      x2="7.76142"
+      y2="11.9918"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="var(--color-stop-1)" />
+      <stop offset="1" stop-color="var(--color-stop-2)" />
+    </linearGradient>
+  </svg>
+</div>
 
     <div class="backdrop is-hidden" data-modal-leave>
   <div class="leave-card">
@@ -1212,40 +1214,42 @@
   </div>
 </div>
 
-    <!-- Modal Thanks Review -->
-<div class="is-hidden modal-thanks-review">
-  <button type="button" class="modal-close-thanks-review">
-    <svg class="modal-close-thanks-review-icon" width="16" height="16">
-      <use href="../img/icons.svg#icon-close-btn-small"></use>
-    </svg>
-  </button>
-  <div class="modal-thanks-review-content">
-    <h2 class="section-title">
-      thank you<br />
-      <span>your feedback!</span>
-    </h2>
-    <p>We are so happy to hear from you!</p>
+    <div class="backdrop is-hidden">
+  <!-- Modal Thanks Review -->
+  <div class="modal-thanks-review">
+    <button type="button" class="modal-close-thanks-review">
+      <svg class="modal-close-thanks-review-icon" width="16" height="16">
+        <use href="../img/icons.svg#icon-close-btn-small"></use>
+      </svg>
+    </button>
+    <div class="modal-thanks-review-content">
+      <h2 class="section-title">
+        thank you<br />
+        <span>your feedback!</span>
+      </h2>
+      <p>We are so happy to hear from you!</p>
+    </div>
   </div>
-</div>
 
-<!-- Gradient for close-icon -->
-<svg
-  style="width: 0; height: 0; position: absolute"
-  aria-hidden="true"
-  focusable="false"
->
-  <linearGradient
-    id="modal-close-icon-gradient"
-    x1="8.03478"
-    y1="4"
-    x2="7.76142"
-    y2="11.9918"
-    gradientUnits="userSpaceOnUse"
+  <!-- Gradient for close-icon -->
+  <svg
+    style="width: 0; height: 0; position: absolute"
+    aria-hidden="true"
+    focusable="false"
   >
-    <stop stop-color="var(--color-stop-1)" />
-    <stop offset="1" stop-color="var(--color-stop-2)" />
-  </linearGradient>
-</svg>
+    <linearGradient
+      id="modal-close-icon-gradient"
+      x1="8.03478"
+      y1="4"
+      x2="7.76142"
+      y2="11.9918"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="var(--color-stop-1)" />
+      <stop offset="1" stop-color="var(--color-stop-2)" />
+    </linearGradient>
+  </svg>
+</div>
 
     <div class="backdrop is-hidden" data-explore>
   <div class="explore-card">
