@@ -1,10 +1,8 @@
 <!-- Modal Thanks Buy -->
 <div class="is-hidden modal-thanks-buy">
-  <button type="button" class="modal-close-thanks-buy" data-modal-close>
+  <button type="button" class="modal-close-thanks-buy">
     <svg class="modal-close-thanks-buy-icon" width="16" height="16">
-      <use
-        href="../img/modal-thank-you/modal-close-thanks-buy-icon.svg#icon-modal-close-thanks-buy"
-      ></use>
+      <use href="../img/icons.svg#icon-close-btn-small"></use>
     </svg>
   </button>
   <div class="modal-thanks-buy-content">
@@ -19,41 +17,35 @@
 
 <!-- Modal Thanks Review -->
 <div class="modal-thanks-review">
-  <button type="button" class="modal-close-thanks-review" data-modal-close>
-    <svg class="modal-close-thanks-buy-icon" width="16" height="16">
+  <button type="button" class="modal-close-thanks-review">
+    <svg class="modal-close-thanks-review-icon" width="16" height="16">
       <use href="../img/icons.svg#icon-close-btn-small"></use>
     </svg>
   </button>
   <div class="modal-thanks-review-content">
-    <h2 class="section-title">thank you for your feedback!</h2>
+    <h2 class="section-title">
+      thank you<br />
+      <span>your feedback!</span>
+    </h2>
     <p>We are so happy to hear from you!</p>
   </div>
 </div>
+
+<!-- Gradient for close-icon -->
 <svg
   style="width: 0; height: 0; position: absolute"
   aria-hidden="true"
   focusable="false"
 >
   <linearGradient
-    id="modal-close-icon-gradient-first"
+    id="modal-close-icon-gradient"
     x1="8.03478"
     y1="4"
     x2="7.76142"
     y2="11.9918"
     gradientUnits="userSpaceOnUse"
   >
-    <stop stop-color="#F16529" />
-    <stop offset="1" stop-color="#D44528" />
-  </linearGradient>
-  <linearGradient
-    id="modal-close-icon-gradient-second"
-    x1="8.03478"
-    y1="4"
-    x2="7.76142"
-    y2="11.9918"
-    gradientUnits="userSpaceOnUse"
-  >
-    <stop stop-color="#F16529" />
-    <stop offset="1" stop-color="#D44528" />
+    <stop stop-color="var(--color-stop-1)" />
+    <stop offset="1" stop-color="var(--color-stop-2)" />
   </linearGradient>
 </svg>
