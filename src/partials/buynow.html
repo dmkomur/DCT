@@ -1,8 +1,11 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal-page">
-    <button class="modal-close-btn" type="button" data-modal-close>
-      <svg class="modal-close-icon">
+    <button class="buy-btn" type="button" data-modal-close>
+      <svg class="buy-btn-icon">
         <use href="./img/icons.svg#icon-close-btn-small"></use>
+      </svg>
+      <svg class="buy-btn-icon2">
+        <use href="./img/icons.svg#icon-close-btn-big"></use>
       </svg>
     </button>
     <div class="modal-part-up">
@@ -39,7 +42,7 @@
                 ./img/modal-picture/chocolate-bar-mob.jpg    1x,
                 ./img/modal-picture/chocolate-bar-mob-2x.jpg 2x
               "
-              src="../img/modal-picture/chocolate-bar-mob.jpg"
+              src="./img/modal-picture/chocolate-bar-mob.jpg"
               alt="chocolate"
             />
             <p class="modal-item-info">300 g</p>
@@ -56,12 +59,15 @@
             type="text"
             name="user-name"
             placeholder="Name"
+            pattern="\w{3,16}"
+            required
           />
           <input
             class="modal-input"
             type="text"
             name="user-surname"
             placeholder="Surname"
+            pattern="\w{3,25}"
           />
         </div>
       </label>
@@ -69,7 +75,7 @@
         <span class="modal-field-text">Email</span>
         <input
           class="modal-input"
-          type="text"
+          type="email"
           name="user-email"
           placeholder="Email"
         />
@@ -79,9 +85,10 @@
         <div class="input-wrap">
           <input
             class="modal-input phone-input"
-            type="text"
+            type="tel"
             name="user-phone"
             placeholder="Phone number"
+            required
           />
           <svg class="modal-icon-flag">
             <use href="./img/icons.svg#icon-flag"></use>
