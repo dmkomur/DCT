@@ -73,7 +73,7 @@
 }
 
 .products {
-  margin: 72px 0;
+  padding: 72px 0;
 }
 @media screen and (min-width: 375px) {
   .swiper-slide {
@@ -107,7 +107,7 @@
     margin-top: 32px;
   }
   .products {
-    margin: 100px 0;
+    padding: 100px 0;
   }
 }
 
