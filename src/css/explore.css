@@ -116,8 +116,7 @@
     line-height: 1.21;
     color: white;
     border: 0;
-    transition: color 250ms linear;
-    transition: background-color 250ms liner;
+    transition: color var(--transition-time) linear, background-color var(--transition-time) linear;
 }
 
 .subscribe-modal-btn:hover,
