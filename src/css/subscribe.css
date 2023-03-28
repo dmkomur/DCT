@@ -5,11 +5,9 @@
   width: 100%;
   max-width: 375px;
   margin: 0 auto;
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
+      rgba(0, 0, 0, 0.2)),
     url(../img/subscribe/subscribe-chocolate-mobile-1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,8 +52,8 @@
   font-size: 14px;
   line-height: 1.21;
   color: #ffffff;
-  transition: background-color var(--transition-time) linear;
-  transition: color var(--transition-time) linear;
+  transition: background-color var(--transition-time) linear,
+    color var(--transition-time) linear;
 }
 
 .subscribe-btn:hover,
@@ -74,11 +72,9 @@
   .subscribe-section {
     padding: 72px 0;
     max-width: 768px;
-    background-image: linear-gradient(
-        0deg,
+    background-image: linear-gradient(0deg,
         rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
+        rgba(0, 0, 0, 0.2)),
       url(../img/subscribe/subscribe-chocolate-tablet-1x.jpg);
   }
 
@@ -100,50 +96,42 @@
 @media screen and (min-width: 1200px) {
   .subscribe-section {
     max-width: 1200px;
-    background-image: linear-gradient(
-        0deg,
+    background-image: linear-gradient(0deg,
         rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
+        rgba(0, 0, 0, 0.2)),
       url(../img/subscribe/subscribe-chocolate-desktop-1x.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .subscribe-section {
-    background-image: linear-gradient(
-        0deg,
+    background-image: linear-gradient(0deg,
         rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
+        rgba(0, 0, 0, 0.2)),
       url(../img/subscribe/subscribe-chocolate-mobile-2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
+screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
   .subscribe-section {
-    background-image: linear-gradient(
-        0deg,
+    background-image: linear-gradient(0deg,
         rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
+        rgba(0, 0, 0, 0.2)),
       url(../img/subscribe/subscribe-chocolate-tablet-2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 768px) {
+screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 768px) {
   .subscribe-section {
-    background-image: linear-gradient(
-        0deg,
+    background-image: linear-gradient(0deg,
         rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
+        rgba(0, 0, 0, 0.2)),
       url(../img/subscribe/subscribe-chocolate-desktop-2x.jpg);
   }
 }

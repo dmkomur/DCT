@@ -65,8 +65,7 @@
     border-radius: 100px;
     background: transparent;
     cursor: pointer;
-    transition: background-color 250ms linear;
-    transition: color 250ms linear;
+    transition: background-color var(--transition-time) linear, color var(--transition-time) linear;
 }
 
 .reviews-button:hover,

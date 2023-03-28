@@ -11,6 +11,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
+
   .leave-card .section-title.modal-title {
     font-size: 16px;
     text-align: left;
@@ -24,6 +25,7 @@
     right: 14px;
     padding: 0 0 0 0;
   }
+
   .leave-btn-icon {
     display: block;
     stroke: var(--color-black);
@@ -33,13 +35,16 @@
     transition: stroke var(--transition-time) linear,
       transform var(--transition-time) linear;
   }
+
   .leave-btn-icon2 {
     display: none;
   }
+
   .leave-btn-icon:is(:hover, :focus) {
     stroke: var(--color-orange);
     transform: scale(1.286);
   }
+
   .leave-input {
     width: 100%;
     height: 45px;
@@ -49,9 +54,11 @@
     padding-left: 18px;
     transition: border-color var(--transition-time) linear;
   }
+
   .leave-input:focus {
     border-color: var(--color-orange);
   }
+
   .leave-input::placeholder {
     font-weight: 400;
     font-size: 14px;
@@ -59,6 +66,7 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
   }
+
   .leave-comment::placeholder {
     font-weight: 400;
     font-size: 14px;
@@ -66,12 +74,15 @@
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
   }
+
   .input-wrap-leave {
     position: relative;
   }
+
   .input-wrap-leave .phone-input {
     padding-left: 106px;
   }
+
   .leave-icon-flag {
     width: 24px;
     height: 18px;
@@ -79,6 +90,7 @@
     top: 34%;
     left: 18px;
   }
+
   .leave-input-text {
     position: absolute;
     top: 34%;
@@ -89,6 +101,7 @@
     letter-spacing: -0.02em;
     color: #000000;
   }
+
   .leave-input-text::after {
     content: '';
     position: absolute;
@@ -99,9 +112,11 @@
     background-color: rgba(17, 17, 17, 0.05);
     rotate: 90deg;
   }
+
   .leave-modal-form .modal-btn {
     width: 93px;
   }
+
   .leave-comment {
     width: 100%;
     height: 91px;
@@ -113,14 +128,17 @@
     padding-left: 18px;
     transition: border-color var(--transition-time) linear;
   }
+
   .leave-comment:focus {
     border-color: var(--color-orange);
   }
+
   .leave-modal-form {
     display: flex;
     flex-direction: column;
     gap: 18px;
   }
+
   .form-wrap {
     display: flex;
     flex-direction: column;
@@ -133,6 +151,7 @@
     width: 311px;
     height: 471px;
   }
+
   .leave-card .section-title.modal-title {
     font-size: 20px;
     text-align: left;
@@ -145,10 +164,12 @@
     height: 631px;
     padding: 40px;
   }
+
   .leave-button {
     top: 24px;
     right: 24px;
   }
+
   .leave-input {
     width: 100%;
     height: 66px;
@@ -157,10 +178,12 @@
     padding-left: 18px;
     font-size: 20px;
   }
+
   .input-wrap-leave .phone-input {
     font-size: 20px;
     padding-left: 149px;
   }
+
   .leave-input-text {
     top: 35%;
     left: 60px;
@@ -168,6 +191,7 @@
     font-size: 18px;
     line-height: 1.22;
   }
+
   .leave-input-text::after {
     content: '';
     top: 50%;
@@ -175,6 +199,7 @@
     width: 35px;
     height: 2px;
   }
+
   .leave-icon-flag {
     width: 32px;
     height: 24px;
@@ -182,45 +207,55 @@
     top: 34%;
     left: 24px;
   }
+
   .leave-input::placeholder {
     font-size: 18px;
     line-height: 1.22;
   }
+
   .leave-comment {
     height: 137px;
     font-size: 20px;
   }
+
   .leave-comment::placeholder {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.22;
   }
+
   .leave-comment::placeholder {
     font-size: 18px;
     line-height: 1.22;
   }
+
   .leave-modal-form .modal-btn {
     width: 117px;
     height: 45px;
   }
+
   .leave-card .section-title.modal-title {
     width: 298px;
     margin-bottom: 40px;
     font-size: 24px;
   }
+
   .leave-modal-form {
     display: flex;
     flex-direction: column;
     gap: 19px;
   }
+
   .form-wrap {
     display: flex;
     flex-direction: column;
     gap: 18px;
   }
+
   .leave-btn-icon {
     display: none;
   }
+
   .leave-btn-icon2 {
     display: block;
     stroke: var(--color-black);
@@ -230,14 +265,17 @@
     transition: stroke var(--transition-time) linear,
       transform var(--transition-time) linear;
   }
+
   .leave-btn-icon2:is(:hover, :focus) {
     stroke: var(--color-orange);
     transform: scale(1.25);
   }
+
   .space-for-title {
     display: none;
   }
 }
 
-@media screen and (min-width: 1200px) {
-} ;
+@media screen and (min-width: 1200px) {}
+
+;
