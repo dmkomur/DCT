@@ -1,3 +1,7 @@
+.sellers {
+    padding-bottom: 72px;
+}
+
 .sellers-wrap-text {
     display: none;
 }
@@ -33,10 +37,6 @@
     border-radius: 15px;
 }
 
-.seller-wrap {
-    margin-bottom: 72px;
-}
-
 .buy-button {
     display: block;
     margin: 0 auto;
@@ -67,6 +67,10 @@
 ;
 
 @media screen and (min-width: 768px) {
+    .sellers {
+        padding-bottom: 100px;
+    }
+
     .sellers-text {
         display: none;
     }
@@ -88,7 +92,6 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 100px;
     }
 
     .sellers-wrap-text {
@@ -110,12 +113,12 @@
 ;
 
 @media screen and (min-width: 1200px) {
-    .sellers-picture-three {
-        display: block;
+    .sellers {
+        padding-bottom: 128px;
     }
 
-    .seller-wrap {
-        margin-bottom: 128px;
+    .sellers-picture-three {
+        display: block;
     }
 
     .sellers-wrap-text {
